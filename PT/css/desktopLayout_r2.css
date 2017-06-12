@@ -1,0 +1,1644 @@
+﻿/* ------- INDEX --------
+
+
+*/
+
+body{
+	background-color: #f7f7f7;
+	margin:0;
+}
+
+/* 1. Defining rows, columns and tables and other definitions to be re-used throughout the site. */
+/* 1.1 Basic row - column definition */
+.row{
+	width:100%;
+	margin-top:100px;
+	position:relative;
+	border:1px solid #111150;
+}
+
+.c1{
+	width:100%;
+	text-align:center;
+}
+
+.c3{
+	margin:0;
+	box-sizing:border-box;
+	width:33vw;
+	height:33vw;
+	border:1px solid white;
+	display:inline-block;	
+	background-color:#3399ff;	
+}
+
+.c4{
+	box-sizing:border-box;
+	border:1px solid white;
+	display:inline-block;	
+	background-color:#3399ff;
+}
+
+.c4:hover{
+	background-color:#111150;
+}
+
+.c5{
+	box-sizing:border-box;
+	width:19.7vw;
+	height:19.7vw;
+	border:2px solid white;
+	display:inline-block;	
+	background-color:#3399ff;	
+}
+
+.row.banner.bannerLink a{
+	position:absolute;
+	bottom:10%;
+	left:10%;
+	z-index:2;
+	color:white;
+	font-size:200%;
+	font-style:italic;
+	text-align:end;
+}
+
+.row.descBox{
+	background-color:#f7f7f7;
+}
+
+.row.descBox .descText{
+	font-size:150%;
+	color:black;
+	text-align:center;
+	padding:5px;	
+}
+
+/* 1.2 Basic table definition */
+.t-table{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	display:table;
+}
+
+.t-row{
+	width:100%;
+	display:table-row;
+	padding:0;
+}
+
+.t-row .t-cell{
+	position:relative;
+	border:2px solid white;
+	width:25vw;
+	height:25vw;
+	display:table-cell;
+	padding:0;
+}
+
+.t-row .t-cell img{
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.t-row .t-cell .boxTitle{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+
+.t-row .t-cell .boxTitle h1{
+	position:absolute;
+	text-align:center;
+	top:40%;
+	left:0;
+	right:0;
+}
+
+/* Blocks - Title and drop-down menu for each block */
+.block{
+	height:50px;
+	width:100%;
+	border:2px solid black;
+	margin-top:50px;
+	position:relative;
+	text-align:center;
+}
+
+.block .blockMenu{
+	border:2px solid green;
+	background-color:#f7f7f7;
+	width:10%;
+	position:absolute;
+	left:50%;
+	transform:translate(-50%, 0);
+}
+
+.block .blockTitle .downArrow{
+	background-color:#f7f7f7;
+	color:black;	
+	cursor:pointer;
+	outline:0;
+}
+
+.dispMenu{
+	z-index:100;
+	display:none;
+}
+
+.block .blockMenu a{
+	display:block;
+	text-decoration:none;
+	color:black;
+	text-align:center;
+	margin:5px;
+}
+
+.blockTitle{
+	height:100%;
+}
+
+.blockTitle div{
+	height:100%;
+	display:inline-block;
+	border:1px solid red;
+}
+
+.blockTitle div p{
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+
+.blockTitle h4{
+	border:1px solid blue;
+	display:inline-block;
+	height:100%;
+	font-family:freight-text-pro-n4,freight-text-pro,serif;
+	font-size:150%;
+	text-align:center;
+	color:black;
+}
+
+.blockTitle img{
+	width:100%;
+	height:100%;
+}
+
+.blockTitle .arrowBtn{
+	border:none;
+	background:none;
+	display:inline-block;
+}
+
+/* Titles inside blocks */
+.blockName{
+	display:table;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+
+.blockName h4{
+	color:white;
+	font-size:200%;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* Banner titles inside banners */
+.bannerName{
+	display:inline-block;
+	position:absolute;
+	left:50px;
+	bottom:50px;
+}
+
+.bannerName h4{
+	color:white;
+	font-size:200%;
+	text-align:left;
+	margin:0;
+}
+
+/* 1.3 Basic containers to be used in templates and instances */
+.detailsContainer{
+	width:100%;
+	padding:0;
+}
+
+.detailHeading p{
+	color:teal;
+	margin:2% 0 0 10%;
+}
+
+.detailHeading, .detLeft, .detRight{
+	font-size:120%;
+}
+
+.detailsContainer .details{
+	margin:0;
+}
+
+.detailsContainer .details p{
+	display:inline-block;
+}
+
+.detLeft{
+	margin:0 0 0 10%;
+}
+
+.detRight{
+	margin:0;
+}
+
+/* 1.4 Definition of articles used in featured work journalist, policy makers, researchers and students page */
+.flTitle{
+	margin-top:5%;
+	width:100%;
+	text-align:center;
+	color:teal;
+}
+
+.fwArticleContainer{
+	display:table;
+	width:100%;
+}
+
+.fwArticleContainer .fwArticle{
+	display:table-row;
+}
+
+.fwArticleContainer .fwArticle .artLeft{
+	width:40vw;
+	display:table-cell;
+	text-align:right;
+}
+
+.fwArticleContainer .fwArticle .artRight{
+	padding-left:2%;
+	width:60vw;
+	display:table-cell;
+}
+
+.contHeading{
+	margin-top:50px;
+	text-align:center;
+}
+
+.contHeading p{
+	font-size:150%;
+}
+
+/* Menu */
+.clickMenu{
+	width: auto;	
+	padding-right:35px;
+	background-color:#111150;
+	background-image:url('../images/pitt-logo-bluebkg.gif');
+	background-repeat:no-repeat;
+	background-position:left center;
+	text-align:right;
+}
+
+.mMenu{
+	display:none;
+}
+
+.menu-item{
+	height:60px;
+	position:relative;
+	display:inline-block;
+	background-color:#111150;
+}
+	
+.menu-item h4{
+	font-family:brandon-grotesque,Gotham,Helvetica,Arial,sans-serif;
+	font-weight:normal;	
+	text-align:center;
+}
+
+.menu-item a{
+	text-decoration:none;
+	font-family:brandon-grotesque,Gotham,Helvetica,Arial,sans-serif;
+}
+
+.menu-item h4, .menu-item a{
+	color:white;
+	transition:0.5s;
+}
+
+.mLinks{
+	z-index:1;
+	position:absolute;
+	width:120px;
+	overflow:hidden;
+	height:0px;
+	left:0;
+	top:60px;
+	display:block;
+	background-color:#111150;
+	text-align:left;
+	transition:0.5s;
+}
+
+.mLinks a{
+	color:white;
+	display:block;
+	margin:10px;
+	text-align:left;
+}
+
+.menu-item:hover .mLinks{
+	height:100px;
+}
+
+/* Contact us */
+.row.contactUs .c1 h4 p{
+	text-align:justify;
+	text-justify:inter-word;
+}
+
+.row.contactUs .c1 h4, p{
+	font-size:200%;
+}
+
+/* Definition title to be used in tab layout */
+.defTitle{
+	display:none;
+}
+
+/* ----------------------------------------------------- HOME PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner{
+	margin-top:0;
+	position:relative;
+	border:1px solid #111150;
+}
+
+.row.banner .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/HomePage_banner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* Data portal */
+.row.dataPortal{
+	margin-top:50px;
+	background-color:#3399ff;
+}
+
+.row.dataPortal .c1{
+	position:relative;
+	width:100%;
+	height:500px;
+	background-image:url('../images/HomePage_AccessData.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+
+/* Data map */
+.t-table.mapContainer{
+	box-sizing:border-box;
+	border:none;
+	background-color:#f7f7f7;
+	width:100%;
+	display:table;
+}
+
+.t-table.mapContainer .t-row{
+	border:none;
+	border-collapse:collapse;
+	width:100%;
+	display:table-row;
+	padding:0;	
+}
+
+.t-table.mapContainer .t-row .t-cell.userStats{
+	border:none;
+	border-collapse:collapse;
+	width:30vw;
+	height:25vw;
+	display:table-cell;
+	padding:0;	
+	vertical-align:middle;
+}
+
+.t-cell.userStats div{
+	border:none;
+	display:block;
+	width:100%;
+	font-style:italic;
+	text-align:center;
+}
+
+.t-table.mapContainer .t-row .t-cell.dataMap{
+	border:none;
+	border-collapse:collapse;
+	position:relative;
+	width:70vw;
+	height:25vw;
+	display:table-cell;
+	padding:2%;	
+}
+
+.t-table.mapContainer .t-row .t-cell.dataMap .c1{
+	border:none;
+	border-radius: 25px;
+	width:100%;
+	height:100%;
+	background-image:url('../images/ProjecTycho_UsersMap.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+
+.t-table.mapContainer .t-row .t-cell.dataMap .c1 img{	
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+/* News */
+.row.news{
+	margin-top:0;
+	background-color:#3399ff;	
+}
+
+/* Team */
+.t-table.team{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	display:table;
+	position:relative;
+}
+
+.t-table.team .t-row{
+	width:100%;
+	display:table-row;
+	padding:0;
+}
+
+.t-table.team .t-cell{
+	position:relative;
+	width:20vw;
+	height:20vw;
+}
+
+.t-table.team .t-cell img{
+	width:100%;
+	height:100%;
+}
+
+.t-table.team .t-cell .personName{
+	background-color:#111150;
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:0;
+	color:white;
+	font-size:150%;
+	overflow:hidden;
+	transition:.2s;
+}
+
+.t-table.team .t-cell .personName .text{
+	position:absolute;
+	top:50%;
+	left:20%;
+	right:20%;
+}
+
+.t-table.team .t-cell:hover .personName{
+	height:100%;
+}
+
+/* Footer */
+.footer{
+	margin-top:100px;
+}
+
+.footer .t-cell{
+	background-color:#111150;
+	color:white;
+	border:none;
+}
+
+.footer .t-cell .col_2 a{
+	color:white;
+	display:block;
+	text-decoration:none;
+}
+
+/* ----------------------------------------------------- ABOUT PAGE-------------------------------------------------------*/
+/* Banner and logo */
+.row.aboutBanner{
+	margin-top:0;
+	position:relative;
+}
+
+.row.aboutBanner .c1{
+	width:100%;
+	height:600px;
+	background-image:url('../images/AboutBanner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.aboutBanner .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.aboutBanner .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+
+/* Methods and activities */
+.row.methodActivities{
+	margin-top:0;
+	position:relative;
+}
+
+.row.methodActivities .c1{
+	width:100%;
+	height:600px;
+	background-image:url('../images/About_MethodsActivities.jpg');
+	background-repeat:no-repeat;
+	background-position:15% 15%;
+	background-size:cover;
+}
+
+/* ----------------------------------------------------- PEOPLE PAGE-------------------------------------------------------*/
+/* Banner and logo */
+.row.peoplePage{
+	margin-top:0;
+	position:relative;
+}
+
+.row.peoplePage .c1{
+	width:100%;
+	height:70vh;
+	background-image:url('../images/People_Banner.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-size:cover;
+}
+
+.peoplePage .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:15vw;
+	width:20vw;
+}
+
+.peoplePage .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* People grid */
+.row.peopleMessage p{
+	color:black;
+	font-size:120%;
+	text-align:justify;
+	padding:5px;
+}
+
+.gridContainer{
+	padding:5%;
+}
+
+#grid {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#grid li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width:19%;
+    padding: 0 0 21.9399% 0;
+    -o-transform: rotate(-60deg) skewY(30deg);
+    -moz-transform: rotate(-60deg) skewY(30deg);
+    -webkit-transform: rotate(-60deg) skewY(30deg);
+    -ms-transform: rotate(-60deg) skewY(30deg);
+    transform: rotate(-60deg) skewY(30deg);
+    background: #fd005f;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#grid li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+    text-align:center;
+}
+
+#grid li .hexagon img{
+	width:100%;
+	height:100%;
+}
+
+#grid li .personName{
+	position:absolute;
+	color:white;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+	padding:0;
+	margin:0;
+	z-index:10;
+	text-align:center;
+}
+
+#grid li .personName h1{
+	width:100%;
+	height:100%;
+	padding-top:50%;
+	opacity:0;
+	font-size:200%;
+}
+
+#grid li .personName h1 a{
+	text-decoration:none;
+	color:white;
+}
+
+#grid li .bgColor{
+	opacity:0;
+	transition:all 0.5s ease;
+}
+
+
+#grid li *{
+    visibility: visible;
+}
+
+#grid li{
+	margin: 0.10%;
+}
+
+#grid.even li {
+	margin-top: -5.3%;
+	margin-bottom: -5.3%;
+	-o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+	-moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+	-webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+	-ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+	transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+#grid li:hover .bgColor{
+	opacity:1;
+	background-color:teal;
+}
+
+/* ----------------------------------------------------- DATA PORTAL PAGE-------------------------------------------------------*/
+/* Data portal page banner and logo */
+.row.dataBanner{
+	margin-top:0;
+	position:relative;
+}
+
+.row.dataBanner .c1{
+	width:100%;
+	height:600px;
+	background-image:url('../images/DataBanner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.dataBanner .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.dataBanner .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* Pre-assembled data sets */
+.t-table.preData{
+	margin-bottom:50px;
+	border-collapse:separate;
+	border-spacing:10px;	
+}
+
+.t-table.preData .t-cell{
+	border:2px solid black;
+	margin-right:10px;
+}
+
+/* Access to data used for published research */
+.row.thinBanner{
+	position:relative;
+	margin-top:50px;
+	background-color:#3399ff;
+}
+
+.row.thinBanner .thinBannerText{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+
+.row.thinBanner .thinBannerText p{
+	margin-top:5%;
+	color:white;
+	font-size:300%;
+}
+
+.row.thinBanner .c1:hover{
+	background-color:#111150;	
+}
+
+.row.thinBanner#b1 .c1{
+	width:100%;
+	height:300px;
+	background-image:url('../images/DataPortal_AccessDataUsedInPublishedResearch.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+
+.row.thinBanner#b2 .c1{
+	width:100%;
+	height:300px;
+	background-image:url('../images/DataPortal_AccessToStandardizedData.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+
+.row.thinBanner#b3 .c1{
+	width:100%;
+	height:300px;
+	background-image:url('../images/DataPortal_APIForStandardizedData.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+
+.row.descBox .c1 p, .row.descBox .c1 h4 {
+	font-size:200%;
+}
+
+/* Datasets by country or conditions */
+.t-table.counCond{
+	margin-bottom:50px;
+	border-collapse:separate;
+	border-spacing:10px;	
+}
+
+.t-table.counCond .t-cell{
+	border:2px solid black;
+	margin-right:10px;
+}
+
+/* ----------------------------------------------------- FEATUREDWORK - JOURNALIST PAGE -------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.journalist{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.journalist .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/Users_Media3.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.journalist .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:15vw;
+	width:15vw;
+}
+
+.journalist .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- FEATUREDWORK - POLICY MAKER PAGE -------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.policyMaker{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.policyMaker .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/Users_Policy.jpg');
+	background-repeat:no-repeat;
+	background-position:50%;
+	background-size:cover;
+}
+
+.policyMaker .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.policyMaker .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- FEATUREDWORK - RESEARCHER PAGE -------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.researcher{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.researcher .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/Users_Research.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.researcher .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:15vw;
+	width:15vw;
+}
+
+.researcher .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- FEATUREDWORK - STUDENTS PAGE -------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.student{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.student .c1{
+	width:100%;
+	height:80vh;
+	position:relative;
+	background-image:url('../images/Users_Students.jpg');
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	background-size:cover;
+}
+
+.student .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:15vw;
+	width:15vw;
+}
+
+.student .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- FEATUREDWORK - OTHERS PAGE -------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.fwOther{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.fwOther .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/Users_Commercial.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.fwOther .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:15vw;
+	width:15vw;
+}
+
+.fwOther .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- FEATUREDWORK - LISTING PAGE -------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.listing{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.listing .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/FeaturedWork_Banner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.listing .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.listing .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+
+/* ----------------------------------------------------- MEDIA PAGE -------------------------------------------------------*/
+/* Buttons for - How to use Project tycho, contact project tycho, see visualizations */
+.row.mediaButtons .c3{
+	margin:0;
+	box-sizing:border-box;
+	width:32vw;
+	height:40px;
+	border:1px solid white;
+	display:inline-block;	
+	background-color:#3399ff;		
+}
+
+
+/* ----------------------------------------------------- PERSON DETAILS PAGE -------------------------------------------------------*/
+/* Banner and logo */
+.row.personDetails{
+	margin-top:0;
+	position:relative;
+}
+
+.row.personDetails .c1{
+	background-color:#f7f7f7;
+	width:100%;
+	height:200px;
+}
+
+.row.personDetails .pitt_logo{
+	position:absolute;
+	top:0;
+	left:2%;
+	height:10vw;
+	width:15vw;
+}
+
+.row.personDetails .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+.row.personDetails .personInfo{
+	position:absolute;
+	top:0;
+	right:2%;
+}
+
+.row.personDetails .personInfo h4{
+	margin-bottom:0;
+	margin-top:0;
+}
+
+.row.personDetails .personInfo h4:nth-child(1){
+	color:teal;
+	font-size:180%;
+	font-style:italic;
+}
+
+.row.personDetails .personInfo h4:nth-child(2), h4:nth-child(3){
+	font-size:120%;
+}
+
+/* Person bio, photo and text */
+.row.personBio{
+	margin-top:0;
+	position:relative;
+}
+
+.row.personBio .personPhoto{
+	width:25vw;
+	height:25vw;
+	float:right;
+	margin-left:2%;
+	background-image:url('../images/wilbert.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.row.personBio .personText{
+	padding-left:2%;
+	font-size:120%;
+	text-align:justify;
+	text-justify:inter-word;
+	clear:left;
+}
+
+/* ----------------------------------------------------- NEWS PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.newsPage{
+	margin-top:0;
+	position:relative;
+}
+
+.row.newsPage .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/Users_Media2.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.newsPage.pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:15vw;
+	width:20vw;
+}
+
+.newsPage.pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- COLLABORATOR AND FUNDERS LISTING PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.collabFunder{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.collabFunder .c1{
+	width:100%;
+	height:600px;
+	background-image:url('../images/CollaboratorsFundersLising.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.collabFunder .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.collabFunder .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+
+/* Collaborators */
+.block.funderCollab{
+	color:teal;
+	font-size:150%;
+}
+
+.block.funderCollab h4{
+	margin:0;
+}
+
+.collabList{
+	margin-bottom:5%;
+}
+
+.collabList a{
+	margin-top:1%;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	color:black;
+}
+
+.funderList a{
+	margin-top:1%;
+	display:block;
+	text-align:center;
+	text-decoration:none;	
+	color:black;
+}
+
+/* ----------------------------------------------------- COUNTRY AND CONDITIONS PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.countryConditions{
+	margin-top:0;
+}
+
+.row.banner.countryConditions .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/CountriesConditions_Banner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.countryConditions .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+.countryConditions .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* Conditions */
+.vMenu{
+	border:1px solid olive;
+	width:40vw;
+	height:20vw;
+	margin:0 auto;
+	overflow-y:auto;
+}
+
+.vMenu a{
+	display:block;
+	text-align:center;
+}
+
+/* ----------------------------------------------------- COUNTRY AND CONDITIONS - CONDITION INSTANCE PAGE-------------------------------------------------------*/
+/* Logo and condition name */
+.row.conditionDetails{
+	margin-top:0;
+	position:relative;
+}
+
+.row.conditionDetails .c1{
+	position:relative;
+	background-color:#f7f7f7;
+	width:100%;
+	height:200px;
+}
+
+.row.conditionDetails .pitt_logo{
+	position:absolute;
+	top:0;
+	left:2%;
+	height:10vw;
+	width:15vw;
+}
+
+.row.conditionDetails .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+.row.conditionDetails .conditionInfo{
+	position:absolute;
+	top:0;
+	right:2%;
+}
+
+.row.conditionDetails .conditionInfo h4{
+	margin-bottom:0;
+	margin-top:0;
+	color:teal;
+	font-size:180%;
+	font-style:italic;	
+}
+
+/* ----------------------------------------------------- COUNTRY AND CONDITIONS - COUNTRY INSTANCE PAGE-------------------------------------------------------*/
+/* Logo and condition name */
+.row.countryDetails{
+	margin-top:0;
+	position:relative;
+}
+
+.row.countryDetails .c1{
+	position:relative;
+	background-color:#f7f7f7;
+	width:100%;
+	height:200px;
+}
+
+.row.countryDetails .pitt_logo{
+	position:absolute;
+	top:0;
+	left:2%;
+	height:10vw;
+	width:15vw;
+}
+
+.row.countryDetails .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+.row.countryDetails .countryInfo{
+	position:absolute;
+	top:0;
+	right:2%;
+}
+
+.row.countryDetails .countryInfo h4{
+	margin-bottom:0;
+	margin-top:0;
+	color:teal;
+	font-size:180%;
+	font-style:italic;	
+}
+
+/* ----------------------------------------------------- RESEARCH ENVIRONMENT PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.resEnv{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.resEnv .c1{
+	width:100%;
+	height:600px;
+	position:relative;
+	background-image:url('../images/669-redone.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.resEnv .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:10vw;
+	width:10vw;
+}
+
+.resEnv .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+/* University of Pittsburgh */
+.row.uPitt{
+	margin-top:50px;
+	background-color:#3399ff;
+}
+
+.row.uPitt .c1{
+	width:100%;
+	height:60vh;
+	position:relative;
+	background-image:url('../images/ResearchEnvironment_Pitt.jpg');
+	background-repeat:no-repeat;
+	background-position:75%;
+	background-size:cover;	
+}
+
+.uPitt .bannerName_up{
+	display:inline-block;
+	position:absolute;
+	top:50px;
+	right:50px;
+}
+
+.uPitt .bannerName_up h4{
+	color:white;
+	font-size:200%;
+	text-align:left;
+	margin:0;
+}
+
+/* Public Health Dynamics Lab */
+.row.phdl{
+	margin-top:50px;
+	background-color:#3399ff;
+}
+
+.row.phdl .c1{
+	width:100%;
+	height:500px;
+	background-image:url('../images/EnvironmentPHDL.jpg');
+	background-repeat:no-repeat;
+	background-position:10% 10%;
+	background-size:cover;	
+}
+
+.bannerName_ph{
+	display:inline-block;
+	position:absolute;
+	bottom:50px;
+	right:50px;
+}
+
+.bannerName_ph h4{
+	color:white;
+	font-size:200%;
+	text-align:left;
+	margin:0;
+}
+
+/* Vaccine Modelling Initiative */
+.row.vmi{
+	margin-top:50px;
+	background-color:#3399ff;
+}
+
+.row.vmi .c1{
+	width:100%;
+	height:500px;
+	background-image:url('../images/ResearchEnvironmentVaccineModeling.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+
+.bannerName_vm{
+	display:inline-block;
+	position:absolute;
+	bottom:50px;
+	right:50px;
+}
+
+.bannerName_vm h4{
+	color:white;
+	font-size:200%;
+	text-align:left;
+	margin:0;
+}
+
+/* Description about PHDL - 2 with the MIDAS pic */
+.row.descBox.midasCont{
+	position:relative;
+	background-color:#f7f7f7;
+	height:10vw;	
+	margin-bottom:5%;
+}
+
+.row.descBox.midasCont .descText{
+	font-size:150%;
+	text-align:justify;
+	text-justify:inter-word;
+	clear:right;
+}
+
+.row.descBox .descText.re{
+	text-align:justify;
+	text-justify:inter-word;
+}
+
+.midasCont .midas{
+	float:left;
+	height:10vw;
+	width:15vw;	
+}
+
+.midasCont .midas img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- USERS PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.usersPage{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.usersPage .c1{
+	width:100%;
+	height:70vh;
+	position:relative;
+	background-image:url('../images/Users_Banner.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-size:cover;
+}
+
+/* ----------------------------------------------------- MEDIA QUERIES -------------------------------------------------------*/
+@media screen and (min-width:1500px) {
+	.c4.featuredItem{
+		width:19vw;
+		height:19vw;
+	}
+	
+	.t-row .t-cell, .t-table.team .t-cell{
+		width:20vw;
+		height:20vw;
+	}	
+	
+	.menu-item{
+		margin-right:3%;
+	}	
+}
+
+@media screen and (min-width:1100px) and (max-width: 1500px) {
+	.c4.featuredItem{
+		width:24vw;
+		height:24vw;
+	}
+	
+	.clickMenu{
+		padding-right:30px
+	}
+	
+	.menu-item{
+		margin-right:2%;
+	}
+	
+	.t-row .t-cell, .t-table.team .t-cell{
+		width:25vw;
+		height:25vw;
+	}	
+	
+	.t-cell.t5, .t-cell.t10{
+		display:none;
+	}
+	
+}
+
+@media screen and (min-width:800px) and (max-width: 1100px) {
+	.c4.featuredItem{
+		width:32vw;
+		height:32vw;
+	}
+	
+	.menu-item{
+		margin-right:1%;
+	}	
+	
+	.clickMenu{
+		padding-right:25px
+	}	
+	
+	.t-cell.t4, .t-cell.t8{
+		display:none;
+	}
+	
+	.t-cell.t5, .t-cell.t10{
+		display:none;
+	}
+		
+	.t-row .t-cell, .t-table.team .t-cell{
+		width:33vw;
+		height:33vw;
+	}
+}
+
+@media screen and (min-width:680px) and (max-width: 800px) {
+	.c4.featuredItem{
+		width:33vw;
+		height:33vw;
+	}
+	
+	.menu-item{
+		margin-right:1%;
+	}
+	
+	.clickMenu{
+		padding-right:0px
+	}
+		
+	.row.banner .c1{
+		height:60vw;
+	}
+	
+	.t-cell.t4, .t-cell.t8{
+		display:none;
+	}
+	
+	.t-cell.t5, .t-cell.t10{
+		display:none;
+	}
+		
+	.t-row .t-cell, .t-table.team .t-cell{
+		width:33vw;
+		height:33vw;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

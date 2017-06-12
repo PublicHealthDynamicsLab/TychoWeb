@@ -1,0 +1,240 @@
+﻿/* Basic row - column definition */
+.row{
+	width:100%;
+	margin-top:100px;
+	text-align:center;
+}
+
+.c1{
+	width:100%;
+	height:350px;
+	text-align:center;
+	background-color:#3399ff;	
+}
+
+/* 4X2 cells */
+.c4{
+	margin:0;
+	box-sizing:border-box;
+	width:24vw;
+	height:24vw;
+	border:1px solid white;
+	display:inline-block;	
+	background-color:#3399ff;
+}
+
+.c4:hover{
+	background-color:#111150;
+}
+
+.c5{
+	box-sizing:border-box;
+	width:20%;
+	height:300px;
+	border:2px solid white;
+	display:inline-block;	
+	background-color:#3399ff;	
+}
+
+.blockTitle h4{
+	margin-top:50px;
+	font-size:120%;
+	text-align:center;
+}
+
+/* Menu */
+.clickMenu{
+
+	width: auto;	
+	padding-right:35px;
+	background-color:#111150;
+	background-image:url('../images/pitt-logo-bluebkg.gif');
+	background-repeat:no-repeat;
+	background-size:auto auto;
+	text-align:right;
+}
+
+.mMenu{
+	display:none;
+}
+
+.menu-item{
+	height:60px;
+	position:relative;
+	display:inline-block;
+	background-color:#111150;
+	margin-right:35px;
+}
+	
+.menu-item h4{
+	color:white;
+}
+
+.menu-item a{
+	text-decoration:none;
+	color:white;
+}
+
+.mLinks{
+	position:absolute;
+	width:120px;
+	height:0px;
+	top:60px;
+	left:0;
+	display:block;
+	background-color:#111150;
+	text-align:left;
+	overflow:hidden;
+	transition:0.5s;
+}
+
+.mLinks a{
+	display:block;
+	margin:10px;
+	text-align:left;
+}
+
+.menu-item:hover div{
+	height:100px;
+}
+
+
+/* ----------------------------------------------------- HOME PAGE-------------------------------------------------------*/
+
+/* Featured item */
+c4.featuredItem{
+	position:relative;
+}
+
+/* Banner */
+.row.banner{
+	margin-top:0;
+}
+
+.row.banner .c1{
+	width:100%;
+	height:500px;
+	background-image:url('../images/cornell2.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+/* Data portal */
+.row.dataPortal{
+	background-color:#3399ff;
+}
+
+.row.dataPortal .c1:hover{
+	background-color:#111150;	
+}
+
+/* Data map */
+.row.dataMap{
+	background-color:#3399ff;
+}
+
+.row.dataMap c1:hover{
+	background-color:#111150;	
+}
+
+/* News */
+.row.news{
+	margin-top:0;
+	background-color:#3399ff;	
+}
+
+/* Data highlights */
+.row.dataHighlights{
+	margin-top:0;
+	background-color:#3399ff;	
+}
+
+/* ----------------------------------------------------- ABOUT PAGE-------------------------------------------------------*/
+
+/* About us - paragraph */
+.row.aboutUs p{
+	color:white;
+	font-size:120%;
+	text-align:justify;
+	padding:5px;
+}
+
+/* ----------------------------------------------------- PEOPLE PAGE-------------------------------------------------------*/
+/* People message */
+.row.peopleMessage p{
+	color:white;
+	font-size:120%;
+	text-align:justify;
+	padding:5px;
+}
+
+
+/* Current staff */
+.row.currentStaff{
+	margin-top:0;
+	background-color:blanchedalmond;
+}
+
+.row.currentStaff h4{
+	margin-top:50px;
+	font-size:120%;
+	text-align:center;
+}
+
+.row.currentStaff .c5{
+	box-sizing:border-box;
+	width:20%;
+	height:250px;
+	border:2px solid white;
+	display:inline-block;	
+	background-color:#3399ff;
+}
+
+.row.currentStaff .c5 img{
+	width:100%;
+	height:100%;
+}
+
+/* Previous staff */
+.row.previousStaff{
+	margin-top:0;
+	background-color:blanchedalmond;
+}
+
+.row.previousStaff h4{
+	margin-top:50px;
+	font-size:120%;
+	text-align:center;
+}
+
+.row.previousStaff .c5 img{
+	width:100%;
+	height:100%;
+}
+
+/* ----------------------------------------------------- DATA PORTAL PAGE-------------------------------------------------------*/
+
+/* Countries */
+.row.country{
+	margin-top:50px;
+}
+
+.row.country h4{
+	margin:0;
+	font-size:120%;
+	text-align:center;
+}
+
+/* Diseases */
+.row.disease{
+	margin-top:50px;
+}
+
+.row.disease h4{
+	margin:0;	
+	font-size:120%;
+	text-align:center;
+}
+
+
+
