@@ -123,16 +123,13 @@ body{
 
 /* Blocks - Title and drop-down menu for each block */
 .block{
-	height:50px;
 	width:100%;
-	border:2px solid black;
 	margin-top:50px;
 	position:relative;
 	text-align:center;
 }
 
 .block .blockMenu{
-	border:2px solid green;
 	background-color:#f7f7f7;
 	width:10%;
 	position:absolute;
@@ -167,28 +164,24 @@ body{
 .blockTitle div{
 	height:100%;
 	display:inline-block;
-	border:1px solid red;
+	margin:0;
+	padding:0;
+	vertical-align: middle;
 }
 
 .blockTitle div p{
-	display:inline-block;
 	margin:0;
 	padding:0;
 }
 
-.blockTitle h4{
-	border:1px solid blue;
-	display:inline-block;
-	height:100%;
-	font-family:freight-text-pro-n4,freight-text-pro,serif;
-	font-size:150%;
-	text-align:center;
-	color:black;
-}
-
 .blockTitle img{
+	padding-top:20%;
 	width:100%;
 	height:100%;
+}
+
+.blockTitle img:hover{
+	background-color:grey;
 }
 
 .blockTitle .arrowBtn{
@@ -1507,6 +1500,20 @@ body{
 	background-position:top left;
 	background-size:cover;
 }
+
+.usersPage .pitt_logo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:10vw;
+	width:10vw;
+}
+
+.usersPage .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
 
 /* ----------------------------------------------------- MEDIA QUERIES -------------------------------------------------------*/
 @media screen and (min-width:1500px) {

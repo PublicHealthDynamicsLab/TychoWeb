@@ -19,7 +19,7 @@
 	
 	// Block box dropdown menu.
 	var arrowClkFlag=0;
-	$(".block .blockTitle .downArrow").click(function(){
+	$(".block .blockTitle .dMenu").click(function(){
 		if(arrowClkFlag==0){
 			$(this).parent().siblings(".blockMenu").show();	
 			arrowClkFlag=1;		
