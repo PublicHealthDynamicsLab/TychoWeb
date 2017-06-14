@@ -1255,6 +1255,7 @@ body{
 .vMenu a{
 	display:block;
 	text-align:center;
+	margin-top:15px;
 }
 
 /* ----------------------------------------------------- COUNTRY AND CONDITIONS - CONDITION INSTANCE PAGE-------------------------------------------------------*/
@@ -1287,8 +1288,8 @@ body{
 
 .row.conditionDetails .conditionInfo{
 	position:absolute;
-	top:0;
-	right:2%;
+	top:25%;
+	right:15%;
 }
 
 .row.conditionDetails .conditionInfo h4{
@@ -1329,8 +1330,8 @@ body{
 
 .row.countryDetails .countryInfo{
 	position:absolute;
-	top:0;
-	right:2%;
+	top:25%;
+	right:15%;
 }
 
 .row.countryDetails .countryInfo h4{
