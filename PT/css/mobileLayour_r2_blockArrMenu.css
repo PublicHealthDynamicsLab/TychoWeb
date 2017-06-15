@@ -1,4 +1,4 @@
-﻿body{
+body{
   	margin: 0px;
   	padding: 0px;
 }
@@ -127,6 +127,13 @@
 	transform:translate(-50%, 0);
 }
 
+.block .blockTitle .downArrow{
+	background-color:white;
+	color:#111150;	
+	cursor:pointer;
+	outline:0;
+}
+
 .dispMenu{
 	z-index:100;
 	display:none;
@@ -138,37 +145,6 @@
 	color:black;
 	text-align:center;
 	margin:5px;
-}
-
-.blockTitle{
-	height:100%;
-}
-
-.blockTitle div{
-	height:100%;
-	display:inline-block;
-	margin:0;
-	padding:0;
-	vertical-align: middle;
-}
-
-.blockTitle div p{
-	margin:0;
-	padding:0;
-}
-
-.blockTitle img{
-	padding-top:20%;
-}
-
-.blockTitle img:hover{
-	background-color:grey;
-}
-
-.blockTitle .arrowBtn{
-	border:none;
-	background:none;
-	display:inline-block;
 }
 
 /* 1.3 Basic containers to be used in templates and instances */
@@ -623,6 +599,7 @@ nav{
 	color:white;
 }
 
+
 /* Beginning of Buttons - Student, researcher, practitioner, media */
 .commButtons{
 	height:60px;
@@ -640,6 +617,7 @@ nav{
 .forClear{
 	clear:both;
 }
+
 
 /* Beginning of Social */
 .socialMedia{

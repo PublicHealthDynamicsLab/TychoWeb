@@ -147,13 +147,6 @@ body{
 	transform:translate(-50%, 0);
 }
 
-.block .blockTitle .downArrow{
-	background-color:#f7f7f7;
-	color:black;	
-	cursor:pointer;
-	outline:0;
-}
-
 .dispMenu{
 	z-index:100;
 	display:none;
