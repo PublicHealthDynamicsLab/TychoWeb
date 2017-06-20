@@ -2,7 +2,10 @@
 <html>
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">				
 		<script src="../libraries/jquery-3.2.0.js"></script>
 		<script src="../css/projectTycho_r2.js"></script>
 		<link rel="stylesheet" media="(max-width: 680px)" href="../css/mobileLayout_r2.css"/>
@@ -68,18 +71,38 @@
 		
 		<!-- Pre-assembled datasets -->
 		<div class="block">
-			<div class="blockTitle">
-				<h4>Pre-assembled datasets </h4>
-				<h4 class="downArrow">&#9660;</h4>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="btnName">Pre-assembled Datasets</span>	
+					<span class="glyphicon glyphicon-menu-down"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>			  		
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsFour</a></li>
+				</ul>
 			</div>
 		</div>		
 		<div class="t-table preData">
 			<div class="t-row">
-				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell t4"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell t5"><img src="../images/DataSet.jpg"></div>
+				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell sq_even"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell t4 sq_even"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell t5"><div class="boxTitle"><h1>Title 1</h1></div></div>
 			</div>
 		</div>
 		
@@ -117,27 +140,47 @@
 		
 		<!-- Datasets by country or conditions -->
 		<div class="block">
-			<div class="blockTitle">
-				<h4>Dataset by country or condition </h4>
-				<h4 class="downArrow">&#9660;</h4>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="btnName">Dataset by Country or Condition</span>	
+					<span class="glyphicon glyphicon-menu-down"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>			  		
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsFour</a></li>
+				</ul>
 			</div>
 		</div>		
 		<div class="t-table counCond">
 			<div class="t-row">
-				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell t4"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell t5"><img src="../images/DataSet.jpg"></div>
+				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell sq_even"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell t4 sq_even"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell t5"><div class="boxTitle"><h1>Title 1</h1></div></div>
 			</div>
 		</div>
 		<div class="t-table counCond">
 			<div class="t-row">
-				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell t4"><img src="../images/DataSet.jpg"></div>
-				<div class="t-cell t5"><img src="../images/DataSet.jpg"></div>
+				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell sq_even"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell t4 sq_even"><div class="boxTitle"><h1>Title 1</h1></div></div>
+				<div class="t-cell t5"><div class="boxTitle"><h1>Title 1</h1></div></div>
 			</div>
 		</div>
 				

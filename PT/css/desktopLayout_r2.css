@@ -75,6 +75,10 @@ body{
 	margin:0 5%;	
 }
 
+.row.descBox .c1 h4{
+	font-size:500%;
+}
+
 /* 1.2 Basic table definition */
 .t-table{
 	border-collapse:collapse;
@@ -125,6 +129,7 @@ body{
 .t-row .t-cell .boxTitle h1{
 	position:absolute;
 	text-align:center;
+	color:white;
 	top:40%;
 	left:0;
 	right:0;
@@ -136,6 +141,7 @@ body{
 	margin-top:50px;
 	position:relative;
 	text-align:center;
+	background-color: #f7f7f7;	
 }
 
 .block .blockMenu{
@@ -190,6 +196,38 @@ body{
 	display:inline-block;
 }
 
+/* Bootstrap menu for banners */
+.btn{
+	border:none;
+}
+
+.btn-default{
+	background-color:#f7f7f7;
+}
+
+.btnName{
+	font-size:200%;
+}
+
+.dropdown{
+	background-color:#f7f7f7;
+}
+
+.dropdown-menu{
+	overflow-y:auto;
+	max-height:300px;
+	min-width:200px;
+	left: 50%;
+  	right: auto;
+  	text-align: center;
+  	transform: translate(-50%, 0);
+}	
+
+.btn-default.focus, .btn-default:focus {
+    background-color:;
+    border-color: inherit;
+}
+
 /* Titles inside blocks */
 .blockName{
 	display:table;
@@ -200,7 +238,7 @@ body{
 
 .blockName h4{
 	color:white;
-	font-size:350%;
+	font-size:250%;
 	font-weight:normal;
 	display:table-cell;
 	text-align:center;
@@ -220,7 +258,7 @@ body{
 	color:white;
 	font-size:200%;
 	text-align:left;
-	text-shadow:2px 2px red;	
+	text-shadow:2px 2px dimgrey;	
 	margin:0;
 }
 
@@ -599,6 +637,12 @@ body{
 	background-size:cover;
 }
 
+/* Contact us */
+.row.contactUs .c1 p{
+	font-size:150%;
+	margin:0 5%;
+}
+
 /* ----------------------------------------------------- PEOPLE PAGE-------------------------------------------------------*/
 /* Banner and logo */
 .row.peoplePage{
@@ -781,13 +825,15 @@ body{
 /* Pre-assembled data sets */
 .t-table.preData{
 	margin-bottom:50px;
-	border-collapse:separate;
-	border-spacing:10px;	
+	border-collapse:collapse;
 }
 
 .t-table.preData .t-cell{
-	border:2px solid black;
 	margin-right:10px;
+}
+
+.t-table.preData .t-row .t-cell.sq_even{
+	background-color:teal;
 }
 
 /* Access to data used for published research */
@@ -824,20 +870,29 @@ body{
 	background-size:cover;	
 }
 
-.row.descBox .c1 p, .row.descBox .c1 h4 {
+.row.descBox .c1 p{
 	font-size:150%;
 }
+
+.row.descBox .c1 h4{
+	font-size:200%;
+} 
+
+/* Data format */
+
 
 /* Datasets by country or conditions */
 .t-table.counCond{
 	margin-bottom:50px;
-	border-collapse:separate;
-	border-spacing:10px;	
+	border-collapse:collapse;
 }
 
 .t-table.counCond .t-cell{
-	border:2px solid black;
 	margin-right:10px;
+}
+
+.t-table.counCond .t-row .t-cell.sq_even{
+	background-color:teal;
 }
 
 /* ----------------------------------------------------- FEATUREDWORK - JOURNALIST PAGE -------------------------------------------------------*/
@@ -1392,7 +1447,7 @@ body{
 	color:white;
 	font-size:200%;
 	text-align:left;
-	text-shadow:2px 2px red;	
+	text-shadow:2px 2px dimgrey;	
 	margin:0;
 }
 
@@ -1422,7 +1477,7 @@ body{
 	color:white;
 	font-size:200%;
 	text-align:left;
-	text-shadow:2px 2px red;	
+	text-shadow:2px 2px dimgrey;	
 	margin:0;
 }
 
@@ -1452,7 +1507,7 @@ body{
 	color:white;
 	font-size:200%;
 	text-align:left;
-	text-shadow:2px 2px red;	
+	text-shadow:2px 2px dimgrey;	
 	margin:0;
 }
 
