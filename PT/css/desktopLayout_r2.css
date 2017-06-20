@@ -16,7 +16,6 @@ body{
 	width:100%;
 	margin-top:100px;
 	position:relative;
-	border:1px solid #111150;
 }
 
 .c1{
@@ -73,7 +72,7 @@ body{
 	font-size:150%;
 	color:black;
 	text-align:center;
-	padding:5px;	
+	margin:0 5%;	
 }
 
 /* 1.2 Basic table definition */
@@ -201,10 +200,11 @@ body{
 
 .blockName h4{
 	color:white;
-	font-size:200%;
+	font-size:350%;
+	font-weight:normal;
 	display:table-cell;
 	text-align:center;
-	text-shadow:2px 2px red;
+	text-shadow:2px 2px dimgrey;
 	vertical-align:middle;
 }
 
@@ -328,7 +328,7 @@ body{
 
 .menu-item h4, .menu-item a{
 	color:white;
-	transition:0.5s;
+	transition:2s;
 }
 
 .mLinks{
@@ -391,8 +391,8 @@ body{
 
 .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:2%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -572,8 +572,8 @@ body{
 
 .aboutBanner .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -617,8 +617,8 @@ body{
 
 .peoplePage .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:15vw;
 	width:20vw;
 }
@@ -767,8 +767,8 @@ body{
 
 .dataBanner .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -825,7 +825,7 @@ body{
 }
 
 .row.descBox .c1 p, .row.descBox .c1 h4 {
-	font-size:200%;
+	font-size:150%;
 }
 
 /* Datasets by country or conditions */
@@ -859,8 +859,8 @@ body{
 
 .journalist .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:15vw;
 	width:15vw;
 }
@@ -889,8 +889,8 @@ body{
 
 .policyMaker .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -919,8 +919,8 @@ body{
 
 .researcher .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:15vw;
 	width:15vw;
 }
@@ -949,8 +949,8 @@ body{
 
 .student .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:15vw;
 	width:15vw;
 }
@@ -979,8 +979,8 @@ body{
 
 .fwOther .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:15vw;
 	width:15vw;
 }
@@ -1009,8 +1009,8 @@ body{
 
 .listing .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -1049,8 +1049,8 @@ body{
 
 .row.personDetails .pitt_logo{
 	position:absolute;
-	top:0;
-	left:2%;
+	top:2%;
+	left:1%;
 	height:10vw;
 	width:15vw;
 }
@@ -1125,8 +1125,8 @@ body{
 
 .newsPage.pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:15vw;
 	width:20vw;
 }
@@ -1147,7 +1147,7 @@ body{
 }
 
 
-/* ----------------------------------------------------- COLLABORATOR AND FUNDERS LISTING PAGE-------------------------------------------------------*/
+/* ----------------------------------------------------- COLLABORATORS AND FUNDERS LISTING PAGE-------------------------------------------------------*/
 /* Banner and university logo */
 .row.banner.collabFunder{
 	margin-top:0;
@@ -1165,8 +1165,8 @@ body{
 
 .collabFunder .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -1225,8 +1225,8 @@ body{
 
 .countryConditions .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:13.4vw;
 	width:20vw;
 }
@@ -1268,8 +1268,8 @@ body{
 
 .row.conditionDetails .pitt_logo{
 	position:absolute;
-	top:0;
-	left:2%;
+	top:2%;
+	left:1%;
 	height:10vw;
 	width:15vw;
 }
@@ -1310,8 +1310,8 @@ body{
 
 .row.countryDetails .pitt_logo{
 	position:absolute;
-	top:0;
-	left:2%;
+	top:2%;
+	left:1%;
 	height:10vw;
 	width:15vw;
 }
@@ -1354,8 +1354,8 @@ body{
 
 .resEnv .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:10vw;
 	width:10vw;
 }
@@ -1506,8 +1506,8 @@ body{
 
 .usersPage .pitt_logo{
 	position:absolute;
-	top:0;
-	left:0;
+	top:2%;
+	left:1%;
 	height:10vw;
 	width:10vw;
 }
