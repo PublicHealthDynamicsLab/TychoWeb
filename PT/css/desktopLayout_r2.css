@@ -11,16 +11,22 @@ body{
 }
 
 /* 1. Defining rows, columns and tables and other definitions to be re-used throughout the site. */
-/* 1.1 Basic row - column definition */
+/* 
+1.1 Basic row - column definition 
+- Margin left and right to override bootstrap settings.
+- Settings for h4 to 6 to override bootstrap settings.
+*/
+
 .row{
 	width:100%;
 	margin-top:100px;
 	position:relative;
+	margin-left:0;
+	margin-right:0;
 }
 
 .c1{
 	width:100%;
-	text-align:center;
 }
 
 .c3{
@@ -142,6 +148,11 @@ body{
 	position:relative;
 	text-align:center;
 	background-color: #f7f7f7;	
+}
+
+.block h4{
+	color:teal;
+	font-size:150%;
 }
 
 .block .blockMenu{
@@ -296,30 +307,37 @@ body{
 /* 1.4 Definition of articles used in featured work journalist, policy makers, researchers and students page */
 .flTitle{
 	margin-top:5%;
+}
+
+.flTitle h4{
 	width:100%;
 	text-align:center;
-	color:teal;
+	font-size:150%;
+	color:black;
 }
 
 .fwArticleContainer{
-	display:table;
 	width:100%;
 }
 
 .fwArticleContainer .fwArticle{
-	display:table-row;
+	width:100%;
+	margin-top:50px;
 }
 
-.fwArticleContainer .fwArticle .artLeft{
-	width:40vw;
-	display:table-cell;
-	text-align:right;
+.fwArticleContainer .fwArticle div{
+	display:block;
+	text-align:center;
 }
 
-.fwArticleContainer .fwArticle .artRight{
-	padding-left:2%;
-	width:60vw;
-	display:table-cell;
+.fwArticleContainer .fwArticle div p{
+	margin:0;
+}
+
+.fwArticleContainer .fwArticle .artTitle{
+	font-size:120%;
+	font-weight:bold;
+	color:teal;
 }
 
 .contHeading{
@@ -328,7 +346,7 @@ body{
 }
 
 .contHeading p{
-	font-size:150%;
+	font-size:125%;
 }
 
 /* Menu */
@@ -400,7 +418,7 @@ body{
 	text-justify:inter-word;
 }
 
-.row.contactUs .c1 h4, p{
+.row.contactUs .c1 h4, .row.contactUs .c1 p{
 	font-size:200%;
 }
 
@@ -526,6 +544,30 @@ body{
 	background-color:#3399ff;	
 }
 
+.t-table.news .t-cell .sqText{
+	background-color:#111150;
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:0;
+	color:white;
+	font-size:150%;
+	overflow:hidden;
+	transition:.2s;
+}
+
+.t-table.news .t-cell .sqText .text{
+	position:absolute;
+	width:100%;
+	top:50%;
+	text-align:center;
+}
+
+.t-table.news .t-cell:hover .sqText{
+	height:100%;
+}
+
+
 /* Team */
 .t-table.team{
 	border-collapse:collapse;
@@ -552,7 +594,7 @@ body{
 	height:100%;
 }
 
-.t-table.team .t-cell .personName{
+.t-table.team .t-cell .sqText{
 	background-color:#111150;
 	box-sizing:border-box;
 	position:absolute;
@@ -564,14 +606,14 @@ body{
 	transition:.2s;
 }
 
-.t-table.team .t-cell .personName .text{
+.t-table.team .t-cell .sqText .text{
 	position:absolute;
+	width:100%;
 	top:50%;
-	left:20%;
-	right:20%;
+	text-align:center;
 }
 
-.t-table.team .t-cell:hover .personName{
+.t-table.team .t-cell:hover .sqText{
 	height:100%;
 }
 
@@ -916,8 +958,8 @@ body{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:15vw;
-	width:15vw;
+	height:13.4vw;
+	width:20vw;
 }
 
 .journalist .pitt_logo img{
@@ -976,8 +1018,8 @@ body{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:15vw;
-	width:15vw;
+	height:13.4vw;
+	width:20vw;
 }
 
 .researcher .pitt_logo img{
@@ -1006,8 +1048,8 @@ body{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:15vw;
-	width:15vw;
+	height:20vw;
+	width:20vw;
 }
 
 .student .pitt_logo img{
@@ -1036,8 +1078,8 @@ body{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:15vw;
-	width:15vw;
+	height:13.4vw;
+	width:20vw;
 }
 
 .fwOther .pitt_logo img{
@@ -1191,6 +1233,31 @@ body{
 	height:100%;
 }
 
+/* News blocks - articles */
+.t-table.ptNews .t-cell .sqText{
+	background-color:#111150;
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:0;
+	color:white;
+	font-size:150%;
+	overflow:hidden;
+	transition:.2s;
+}
+
+.t-table.ptNews .t-cell .sqText .text{
+	position:absolute;
+	width:100%;
+	top:50%;
+	text-align:center;
+}
+
+.t-table.ptNews .t-cell:hover .sqText{
+	height:100%;
+}
+
+
 /* News archive */
 .row.thinBanner#n1 .c1{
 	width:100%;
@@ -1293,17 +1360,24 @@ body{
 
 /* Conditions */
 .vMenu{
-	border:1px solid olive;
 	width:40vw;
-	height:20vw;
 	margin:0 auto;
-	overflow-y:auto;
 }
 
 .vMenu a{
 	display:block;
 	text-align:center;
 	margin-top:15px;
+	text-decoration: none;
+	color:black;
+}
+
+.vMenu a:hover{
+	color:teal;
+}
+
+.block.condBlock{
+	
 }
 
 /* ----------------------------------------------------- COUNTRY AND CONDITIONS - CONDITION INSTANCE PAGE-------------------------------------------------------*/
@@ -1318,15 +1392,15 @@ body{
 	position:relative;
 	background-color:#f7f7f7;
 	width:100%;
-	height:200px;
+	height:300px;
 }
 
 .row.conditionDetails .pitt_logo{
 	position:absolute;
-	top:2%;
+	top:4%;
 	left:1%;
-	height:10vw;
-	width:15vw;
+	height:13.4vw;
+	width:20vw;
 }
 
 .row.conditionDetails .pitt_logo img{
@@ -1344,8 +1418,9 @@ body{
 	margin-bottom:0;
 	margin-top:0;
 	color:teal;
-	font-size:180%;
-	font-style:italic;	
+	font-size:350%;
+	font-style:italic;
+	font-weight:normal;	
 }
 
 /* ----------------------------------------------------- COUNTRY AND CONDITIONS - COUNTRY INSTANCE PAGE-------------------------------------------------------*/
@@ -1360,15 +1435,15 @@ body{
 	position:relative;
 	background-color:#f7f7f7;
 	width:100%;
-	height:200px;
+	height:300px;
 }
 
 .row.countryDetails .pitt_logo{
 	position:absolute;
-	top:2%;
+	top:4%;
 	left:1%;
-	height:10vw;
-	width:15vw;
+	height:13.4vw;
+	width:20vw;
 }
 
 .row.countryDetails .pitt_logo img{
@@ -1386,8 +1461,9 @@ body{
 	margin-bottom:0;
 	margin-top:0;
 	color:teal;
-	font-size:180%;
-	font-style:italic;	
+	font-size:350%;
+	font-style:italic;
+	font-weight:normal;	
 }
 
 /* ----------------------------------------------------- RESEARCH ENVIRONMENT PAGE-------------------------------------------------------*/

@@ -3,7 +3,10 @@
 
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">				
 		<script src="../libraries/jquery-3.2.0.js"></script>
 		<script src="../css/projectTycho_r2.js"></script>
 		<link rel="stylesheet" media="(max-width: 680px)" href="../css/mobileLayout_r2.css"/>
@@ -58,70 +61,194 @@
 		
 		<!-- Project Tycho news and articles -->
 		<div class="block">
-			<div class="blockTitle">
-				<div><p>Project Tycho News</p></div>
-				<div class="dMenu"><img src="../images/expandDown.png"></div>
-			</div>
-			<div class="blockMenu  dispMenu">
-				<a id="m1" href="#">Link 1</a>
-				<a id="m2" href="#">Link 2</a>
-				<a id="m3" href="#">Link 3</a>
-				<a id="m4" href="#">Link 4</a>
-				<a id="m5" href="#">Link 5</a>
-				<a id="m6" href="#">Link 6</a>
-				<a id="m7" href="#">Link 7</a>
-				<a id="m8" href="#">Link 8</a>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="btnName">Project Tycho News</span>	
+					<span class="glyphicon glyphicon-menu-down"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>			  		
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsFour</a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="t-table ptNews">
 			<div class="t-row">
-				<div class="t-cell"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell"><img src="../images/mosquitoe.jpg"></div>
-				<div class="t-cell"><img src="../images/salmonella.jpg"></div>
-				<div class="t-cell t4"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell t5"><img src="../images/tick.jpeg"></div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				
+					<img src="../images/mosquitoe.jpg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				<img src="../images/salmonella.jpg">
+				</div>
+				<div class="t-cell t4">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell t5">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
 			</div>
 			<div class="t-row">
-				<div class="t-cell"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell"><img src="../images/mosquitoe.jpg"></div>
-				<div class="t-cell"><img src="../images/salmonella.jpg"></div>
-				<div class="t-cell t4"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell t5"><img src="../images/tick.jpeg"></div>
-			</div>			
-		</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				
+					<img src="../images/mosquitoe.jpg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				<img src="../images/salmonella.jpg">
+				</div>
+				<div class="t-cell t4">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell t5">
+					<div class="sqText">
+						<div class="text">Other news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
+			</div>
+		</div>	
 		
 		<!-- News related to Project Tycho and articles -->
 		<div class="block">
-			<div class="blockTitle">
-				<div><p>News Related to Project Tycho</p></div>
-				<div class="dMenu"><img src="../images/expandDown.png"></div>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="btnName">News Related to Project Tycho</span>	
+					<span class="glyphicon glyphicon-menu-down"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>
+					<li><a href="#">ThisIsOne</a></li>
+					<li><a href="#">ThisIsTwo</a></li>
+					<li><a href="#">ThisIsThree</a></li>			  		
+					<li role="separator" class="divider"></li>
+					<li><a href="#">ThisIsFour</a></li>
+				</ul>
 			</div>
-			<div class="blockMenu  dispMenu">
-				<a id="m1" href="#">Link 1</a>
-				<a id="m2" href="#">Link 2</a>
-				<a id="m3" href="#">Link 3</a>
-				<a id="m4" href="#">Link 4</a>
-				<a id="m5" href="#">Link 5</a>
-				<a id="m6" href="#">Link 6</a>
-				<a id="m7" href="#">Link 7</a>
-				<a id="m8" href="#">Link 8</a>
-			</div>
-		</div>	
+		</div>
 		<div class="t-table ptNews">
 			<div class="t-row">
-				<div class="t-cell"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell"><img src="../images/mosquitoe.jpg"></div>
-				<div class="t-cell"><img src="../images/salmonella.jpg"></div>
-				<div class="t-cell t4"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell t5"><img src="../images/tick.jpeg"></div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				
+					<img src="../images/mosquitoe.jpg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				<img src="../images/salmonella.jpg">
+				</div>
+				<div class="t-cell t4">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell t5">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
 			</div>
 			<div class="t-row">
-				<div class="t-cell"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell"><img src="../images/mosquitoe.jpg"></div>
-				<div class="t-cell"><img src="../images/salmonella.jpg"></div>
-				<div class="t-cell t4"><img src="../images/tick.jpeg"></div>
-				<div class="t-cell t5"><img src="../images/tick.jpeg"></div>
-			</div>			
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				
+					<img src="../images/mosquitoe.jpg">
+				</div>
+				<div class="t-cell">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+				<img src="../images/salmonella.jpg">
+				</div>
+				<div class="t-cell t4">
+					<div class="sqText">
+						<div class="text">This is news article</div>
+					</div>
+					<img src="../images/tick.jpeg">
+				</div>
+				<div class="t-cell t5">
+					<div class="sqText">
+						<div class="text">Other news article</div>
+					</div>				
+					<img src="../images/tick.jpeg">
+				</div>
+			</div>
 		</div>	
 		
 		<!-- News Archive -->
