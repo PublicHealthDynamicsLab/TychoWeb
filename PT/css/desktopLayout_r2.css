@@ -14,7 +14,6 @@ body{
 /* 
 1.1 Basic row - column definition 
 - Margin left and right to override bootstrap settings.
-- Settings for h4 to 6 to override bootstrap settings.
 */
 
 .row{
@@ -111,7 +110,6 @@ body{
 }
 
 .t-row .t-cell img{
-	position:absolute;
 	display:block;
 	width:100%;
 	height:100%;
@@ -139,6 +137,29 @@ body{
 	top:40%;
 	left:0;
 	right:0;
+}
+
+.t-table .t-cell .sqText{
+	background-color:#111150;
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:0;
+	color:white;
+	font-size:150%;
+	overflow:hidden;
+	transition:.2s;
+}
+
+.t-table .t-cell .sqText .text{
+	position:absolute;
+	width:100%;
+	top:50%;
+	text-align:center;
+}
+
+.t-table .t-cell:hover .sqText{
+	height:100%;
 }
 
 /* Blocks - Title and drop-down menu for each block */
@@ -538,85 +559,6 @@ body{
 	height:100%;
 }
 
-/* News */
-.row.news{
-	margin-top:0;
-	background-color:#3399ff;	
-}
-
-.t-table.news .t-cell .sqText{
-	background-color:#111150;
-	box-sizing:border-box;
-	position:absolute;
-	width:100%;
-	height:0;
-	color:white;
-	font-size:150%;
-	overflow:hidden;
-	transition:.2s;
-}
-
-.t-table.news .t-cell .sqText .text{
-	position:absolute;
-	width:100%;
-	top:50%;
-	text-align:center;
-}
-
-.t-table.news .t-cell:hover .sqText{
-	height:100%;
-}
-
-
-/* Team */
-.t-table.team{
-	border-collapse:collapse;
-	border-spacing:0;
-	width:100%;
-	display:table;
-	position:relative;
-}
-
-.t-table.team .t-row{
-	width:100%;
-	display:table-row;
-	padding:0;
-}
-
-.t-table.team .t-cell{
-	position:relative;
-	width:20vw;
-	height:20vw;
-}
-
-.t-table.team .t-cell img{
-	width:100%;
-	height:100%;
-}
-
-.t-table.team .t-cell .sqText{
-	background-color:#111150;
-	box-sizing:border-box;
-	position:absolute;
-	width:100%;
-	height:0;
-	color:white;
-	font-size:150%;
-	overflow:hidden;
-	transition:.2s;
-}
-
-.t-table.team .t-cell .sqText .text{
-	position:absolute;
-	width:100%;
-	top:50%;
-	text-align:center;
-}
-
-.t-table.team .t-cell:hover .sqText{
-	height:100%;
-}
-
 /* Footer */
 .footer{
 	margin-top:100px;
@@ -870,9 +812,9 @@ body{
 	border-collapse:collapse;
 }
 
-.t-table.preData .t-cell{
+/* .t-table.preData .t-cell{
 	margin-right:10px;
-}
+} */
 
 .t-table.preData .t-row .t-cell.sq_even{
 	background-color:teal;
@@ -1234,29 +1176,11 @@ body{
 }
 
 /* News blocks - articles */
-.t-table.ptNews .t-cell .sqText{
-	background-color:#111150;
-	box-sizing:border-box;
-	position:absolute;
-	width:100%;
-	height:0;
-	color:white;
-	font-size:150%;
-	overflow:hidden;
-	transition:.2s;
-}
 
-.t-table.ptNews .t-cell .sqText .text{
-	position:absolute;
+.t-table.ptNews .t-cell img{
 	width:100%;
-	top:50%;
-	text-align:center;
-}
-
-.t-table.ptNews .t-cell:hover .sqText{
 	height:100%;
 }
-
 
 /* News archive */
 .row.thinBanner#n1 .c1{
@@ -1376,9 +1300,6 @@ body{
 	color:teal;
 }
 
-.block.condBlock{
-	
-}
 
 /* ----------------------------------------------------- COUNTRY AND CONDITIONS - CONDITION INSTANCE PAGE-------------------------------------------------------*/
 /* Logo and condition name */

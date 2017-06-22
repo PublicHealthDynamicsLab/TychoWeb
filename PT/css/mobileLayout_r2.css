@@ -1,4 +1,5 @@
 ﻿body{
+	background-color:#f7f7f7;
   	margin: 0px;
   	padding: 0px;
 }
@@ -9,6 +10,8 @@
 	width:100%;
 	margin-top:100px;
 	position:relative;
+	margin-left:0;
+	margin-right:0;	
 }
 
 .c1{
@@ -70,8 +73,6 @@
 
 /* 1.2 Basic table definition */
 .t-table{
-	border-collapse:collapse;
-	border-spacing:0;
 	width:100%;
 	display:table;
 }
@@ -85,31 +86,53 @@
 }
 
 .t-row .t-cell{
-	box-sizing:border-box;
+	position:relative;
 	width:33vw;
 	height:33vw;
 	display:table-cell;
 	padding:0;
+	overflow:hidden;
+	background-color:#111150;
+	border:1px solid white;
 }
 
 .t-row .t-cell img{
 	display:block;
 	width:100%;
 	height:100%;
+	transition: all 0.5s;
 }
 
-.blockTitle h4{
-	display:inline-block;
-	height:100%;
-	font-family:freight-text-pro-n4,freight-text-pro,serif;
-	font-size:120%;
-	text-align:center;
-	color:black;
-	margin-bottom:10px;
+.t-row .t-cell:hover img{
+	transform: scale(1.1);
+	opacity:0;
 }
 
 .t-cell.t4, .t-cell.t5{
 	display:none;
+}
+
+.t-table .t-cell .sqText{
+	background-color:#111150;
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:0;
+	color:white;
+	font-size:150%;
+	overflow:hidden;
+	transition:.2s;
+}
+
+.t-table .t-cell .sqText .text{
+	position:absolute;
+	width:100%;
+	top:50%;
+	text-align:center;
+}
+
+.t-table .t-cell:hover .sqText{
+	height:100%;
 }
 
 /* Blocks - Title and drop-down menu */
@@ -117,6 +140,11 @@
 	margin-top:40px;
 	position:relative;
 	text-align:center;
+}
+
+.block h4{
+	color:teal;
+	font-size:150%;
 }
 
 .block .blockMenu{
@@ -171,6 +199,56 @@
 	display:inline-block;
 }
 
+/* Bootstrap menu for banners */
+.btn{
+	border:none;
+}
+
+.btn-default{
+	background-color:#f7f7f7;
+}
+
+.btnName{
+	font-size:100%;
+}
+
+.dropdown{
+	background-color:#f7f7f7;
+}
+
+.dropdown-menu{
+	overflow-y:auto;
+	max-height:300px;
+	min-width:200px;
+	left: 50%;
+  	right: auto;
+  	text-align: center;
+  	transform: translate(-50%, 0);
+}	
+
+.btn-default.focus, .btn-default:focus {
+    background-color:;
+    border-color: inherit;
+}
+
+/* Titles inside blocks */
+.blockName{
+	display:table;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+
+.blockName h4{
+	color:white;
+	font-size:200%;
+	font-weight:normal;
+	display:table-cell;
+	text-align:center;
+	text-shadow:2px 2px dimgrey;
+	vertical-align:middle;
+}
+
 /* 1.3 Basic containers to be used in templates and instances */
 .detailsContainer{
 	width:100%;
@@ -205,30 +283,37 @@
 /* 1.4 Definition of articles used in featured work journalist, policy makers, researchers and students page */
 .flTitle{
 	margin-top:5%;
+}
+
+.flTitle h4{
 	width:100%;
 	text-align:center;
-	color:teal;
+	font-size:150%;
+	color:black;
 }
 
 .fwArticleContainer{
-	display:table;
 	width:100%;
 }
 
 .fwArticleContainer .fwArticle{
-	display:table-row;
+	width:100%;
+	margin-top:50px;
 }
 
-.fwArticleContainer .fwArticle .artLeft{
-	width:40vw;
-	display:table-cell;
-	text-align:right;
+.fwArticleContainer .fwArticle div{
+	display:block;
+	text-align:center;
 }
 
-.fwArticleContainer .fwArticle .artRight{
-	padding-left:2%;
-	width:60vw;
-	display:table-cell;
+.fwArticleContainer .fwArticle div p{
+	margin:0;
+}
+
+.fwArticleContainer .fwArticle .artTitle{
+	font-size:120%;
+	font-weight:bold;
+	color:teal;
 }
 
 .contHeading{
@@ -237,7 +322,7 @@
 }
 
 .contHeading p{
-	font-size:150%;
+	font-size:125%;
 }
 
 /* Navigation Menu */
@@ -352,16 +437,20 @@ nav{
 
 /* Conditions */
 .vMenu{
-	border:1px solid olive;
 	width:40vw;
-	height:50vh;
 	margin:0 auto;
-	overflow-y:auto;
 }
 
 .vMenu a{
 	display:block;
 	text-align:center;
+	margin-top:15px;
+	text-decoration: none;
+	color:black;
+}
+
+.vMenu a:hover{
+	color:teal;
 }
 
 /* Definition title to be used in tab layout */
@@ -377,11 +466,38 @@ nav{
 	display:none;
 }
 
+/* Featured work */
+.t-table.featuredWork{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	display:table;
+	position:relative;
+}
+
+.t-table.featuredWork .t-row{
+	width:100%;
+	display:table-row;
+	padding:0;
+}
+
+.t-table.featuredWork .t-cell{
+	position:relative;
+	width:33vw;
+	height:33vw;
+}
+
+.t-table.featuredWork .t-cell img{
+	border-collapse:collapse;
+	width:100%;
+	height:100%;
+}
+
 /* Data Portal */
 .row.dataPortal{
 	width:100%;
 	height:30vh;
-	margin-top:0;
+	margin-top:40px;
 }
 
 .row.dataPortal .c1{
@@ -414,6 +530,31 @@ nav{
 }
 
 /* News block */
+.t-table.news{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	display:table;
+	position:relative;
+}
+
+.t-table.news .t-row{
+	width:100%;
+	display:table-row;
+	padding:0;
+}
+
+.t-table.news .t-cell{
+	position:relative;
+	width:33vw;
+	height:33vw;
+}
+
+.t-table.news .t-cell img{
+	border-collapse:collapse;
+	width:100%;
+	height:100%;
+}
 
 /* Team */
 .t-table.team{
@@ -439,29 +580,6 @@ nav{
 .t-table.team .t-cell img{
 	border-collapse:collapse;
 	width:100%;
-	height:100%;
-}
-
-.t-table.team .t-cell .personName{
-	background-color:#111150;
-	box-sizing:border-box;
-	position:absolute;
-	width:100%;
-	height:0;
-	color:white;
-	font-size:100%;
-	overflow:hidden;
-	transition:.2s;
-}
-
-.t-table.team .t-cell .personName .text{
-	position:absolute;
-	top:50%;
-	left:20%;
-	right:20%;
-}
-
-.t-table.team .t-cell:hover .personName{
 	height:100%;
 }
 
@@ -527,13 +645,14 @@ nav{
 /* Pre-assembled data sets */
 .t-table.preData{
 	margin-bottom:50px;
-	border-collapse:separate;
-	border-spacing:10px;	
 }
 
 .t-table.preData .t-cell{
-	border:2px solid black;
-	margin-right:10px;
+	border:2px solid white;
+}
+
+.t-table.preData .t-row .t-cell.sq_even{
+	background-color:teal;
 }
 
 /* Access to data used for published research */
@@ -596,13 +715,25 @@ nav{
 /* Datasets by country or conditions */
 .t-table.counCond{
 	margin-bottom:50px;
-	border-collapse:separate;
-	border-spacing:10px;	
 }
 
 .t-table.counCond .t-cell{
-	border:2px solid black;
-	margin-right:10px;
+	border:2px solid white;
+}
+
+.t-table.counCond .t-row .t-cell.sq_even{
+	background-color:teal;
+}
+
+/* ----------------------------------------------------- NEWS PAGE-------------------------------------------------------*/
+/* News archive */
+.row.thinBanner#n1 .c1{
+	width:100%;
+	height:300px;
+	background-image:url('../images/NewsArchive.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
 }
 
 /* ----------------------------------------------------- COMMUNITY PAGE-------------------------------------------------------*/
