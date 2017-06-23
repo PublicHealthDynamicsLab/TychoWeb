@@ -497,6 +497,7 @@ body{
 
 /* Data map */
 .t-table.mapContainer{
+	border:2px solid red;
 	box-sizing:border-box;
 	border:none;
 	background-color:#f7f7f7;
@@ -529,6 +530,25 @@ body{
 	width:100%;
 	font-style:italic;
 	text-align:center;
+}
+
+.t-table.mapContainer .stTb{
+	display:table;
+  	border-collapse:separate;
+	width:100%;
+}
+
+.t-table.mapContainer .stTb .stTbRow{
+	display:table-row;
+	width:100%;
+	padding-left:10px;
+}
+
+.t-table.mapContainer .stTb .stTbCol{
+	display:table-cell;
+	font-size:120%;
+	text-align:left;
+	border-bottom:2px solid grey;	
 }
 
 .t-table.mapContainer .t-row .t-cell.dataMap{
@@ -1176,7 +1196,6 @@ body{
 }
 
 /* News blocks - articles */
-
 .t-table.ptNews .t-cell img{
 	width:100%;
 	height:100%;
@@ -1192,6 +1211,85 @@ body{
 	background-size:cover;	
 }
 
+
+/* ----------------------------------------------------- NEWS INSTANCE PAGE-------------------------------------------------------*/
+/* Logo and news article title */
+.row.newsInstance{
+	margin-top:0;
+	position:relative;
+	border:none;
+}
+
+.row.newsInstance .c1{
+	position:relative;
+	background-color:#f7f7f7;
+	width:100%;
+	height:300px;
+}
+
+.row.newsInstance .pitt_logo{
+	position:absolute;
+	top:4%;
+	left:1%;
+	height:13.4vw;
+	width:20vw;
+}
+
+.row.newsInstance .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+.row.newsInstance .conditionInfo{
+	position:absolute;
+	top:25%;
+	right:15%;
+}
+
+.row.newsInstance .conditionInfo h4{
+	margin-bottom:0;
+	margin-top:0;
+	color:teal;
+	font-size:350%;
+	font-style:italic;
+	font-weight:normal;	
+}
+
+.newsContainer{
+	width:100%;
+	display:table;
+}
+
+.newsContainer .newsRow{
+	display:table-row;
+}
+
+.newsContainer .newsRow .colLeft, .newsContainer .newsRow .colRight{
+	position:relative;
+	display:table-cell;
+	width:50%;
+}
+
+.newsContainer .newsRow .colRight div{
+	display:block;
+	width:100%;
+}
+
+.newsContainer .newsRow .colRight .newsImage{
+	height:400px;
+}
+
+.newsContainer .newsRow .colRight .newsLink{
+	text-align:center;
+	margin:25px 0;
+}
+.newsContainer .newsRow .colLeft p{
+	margin-left:25px;
+	font-size:150%;
+	position:absolute;
+	top:0;
+	left:0;
+}
 
 /* ----------------------------------------------------- COLLABORATORS AND FUNDERS LISTING PAGE-------------------------------------------------------*/
 /* Banner and university logo */
