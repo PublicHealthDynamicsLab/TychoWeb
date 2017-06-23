@@ -370,6 +370,31 @@ body{
 	font-size:125%;
 }
 
+/* Instance pages - Table format for information */
+.insTab{
+	width:50%;
+	margin:2% 0 0 10%;
+	text-align:left;
+}
+
+table, th, td{
+	border-bottom:2px solid gainsboro;
+	border-collapse:collapse;
+}
+
+caption, th{
+	color:teal;
+}
+
+caption{
+	font-size:150%;
+	text-align:left;
+}
+
+th, td{
+	padding:15px;
+}
+
 /* Menu */
 .clickMenu{
 	width: auto;	
@@ -1479,9 +1504,8 @@ body{
 .row.countryDetails .countryInfo h4{
 	margin-bottom:0;
 	margin-top:0;
-	color:teal;
+	color:black;
 	font-size:350%;
-	font-style:italic;
 	font-weight:normal;	
 }
 
