@@ -139,7 +139,6 @@
 .block{
 	margin-top:40px;
 	position:relative;
-	text-align:center;
 }
 
 .block h4{
@@ -199,7 +198,7 @@
 	display:inline-block;
 }
 
-/* Bootstrap menu for banners */
+/* Bootstrap menu - banners */
 .btn{
 	border:none;
 }
@@ -213,6 +212,7 @@
 }
 
 .dropdown{
+	margin-left:10%;
 	background-color:#f7f7f7;
 }
 
@@ -220,15 +220,31 @@
 	overflow-y:auto;
 	max-height:300px;
 	min-width:200px;
-	left: 50%;
-  	right: auto;
-  	text-align: center;
-  	transform: translate(-50%, 0);
 }	
 
 .btn-default.focus, .btn-default:focus {
     background-color:;
     border-color: inherit;
+}
+
+/* Bootstrap menu - blocks */
+.blkBtn.btn-group{
+	margin-left:10%;
+}
+
+.blkBtn .btn{
+	border:none;
+	font-size:100%;	
+}
+
+.blkBtn.btn-group .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background-color:teal;
+	color:white;
+}
+
+.blkBtn.btn-group .btn-default:hover{
+	background-color:teal;
+	color:white;
 }
 
 /* Titles inside blocks */

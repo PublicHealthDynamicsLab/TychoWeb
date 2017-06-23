@@ -167,7 +167,7 @@ body{
 	width:100%;
 	margin-top:50px;
 	position:relative;
-	text-align:center;
+
 	background-color: #f7f7f7;	
 }
 
@@ -242,6 +242,7 @@ body{
 }
 
 .dropdown{
+	margin-left:10%;
 	background-color:#f7f7f7;
 }
 
@@ -249,10 +250,6 @@ body{
 	overflow-y:auto;
 	max-height:300px;
 	min-width:200px;
-	left: 50%;
-  	right: auto;
-  	text-align: center;
-  	transform: translate(-50%, 0);
 }	
 
 .btn-default.focus, .btn-default:focus {
@@ -263,7 +260,6 @@ body{
 /* Bootstrap menu - blocks */
 .blkBtn.btn-group{
 	margin-left:10%;
-
 }
 
 .blkBtn .btn{
