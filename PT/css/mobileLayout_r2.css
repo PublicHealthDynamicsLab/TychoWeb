@@ -198,6 +198,52 @@
 	display:inline-block;
 }
 
+/* Bootstrap - Navigation menu */
+.navbar-brand{
+	padding:0 0;
+}
+
+.navbar-brand>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-right{
+	margin-right:30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size:18px;
+    font-weight:normal;
+}
+
+.navbar-collapse{
+	background-color:#111150;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-header{
+	background-color:#111150;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color:white;
+}
+
+.navbar-default .navbar-toggle{
+	border:white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color:transparent;
+}
+
 /* Bootstrap menu - banners */
 .btn{
 	border:none;
@@ -208,43 +254,38 @@
 }
 
 .btnName{
-	font-size:100%;
+	font-size:150%;
 }
 
 .dropdown{
-	margin-left:10%;
 	background-color:#f7f7f7;
+	text-align:center;
 }
 
 .dropdown-menu{
 	overflow-y:auto;
 	max-height:300px;
 	min-width:200px;
+	left:50%;
+	transform:translate(-50%,0);
 }	
 
 .btn-default.focus, .btn-default:focus {
-    background-color:;
     border-color: inherit;
 }
 
-/* Bootstrap menu - blocks */
-.blkBtn.btn-group{
-	margin-left:10%;
-}
-
-.blkBtn .btn{
-	border:none;
-	font-size:100%;	
-}
-
-.blkBtn.btn-group .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+.btn-default:hover{
 	background-color:teal;
 	color:white;
 }
 
-.blkBtn.btn-group .btn-default:hover{
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
 	background-color:teal;
 	color:white;
+}
+
+.navbar{
+	margin-bottom:0;
 }
 
 /* Titles inside blocks */
