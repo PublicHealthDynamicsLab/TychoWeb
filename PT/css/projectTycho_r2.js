@@ -7,7 +7,6 @@
 		$(this).find(".mLinks").toggleClass("dispBlock");
 	});
 	
-
 	console.log("READY");
 	$(window).resize(function(){
 		console.log($("body").width());
@@ -34,7 +33,6 @@
 	    $(".blockMenu").hide();
 	});
 	
-		
 	$(window).resize(function(){
 		var widthStr = $("body").css("width").replace(/[^\d\.]/g, "");
 		var widthNum = parseInt(widthStr);
@@ -52,7 +50,6 @@
 			$(".c4_8").css("display","inline-block");
 			$(".c4_9").css("display","inline-block");
 			$(".c4_10").css("display","none");
-			//$(".row.featuredWork").append('<div id="six" class=".c4 .featuredItem"></div>');
 		}else if ((widthNum>=1101) & (widthNum<=1500)){
 			$(".c4_7").css("display","inline-block");
 			$(".c4_8").css("display","inline-block");			
@@ -63,26 +60,14 @@
 			$(".c4_10").css("display","inline-block");
 		}
 	});	
-	
-	/* $(".noSubMenu a").mouseover(function(){
-		console.log("In function");
-		/* $("#div1").fadeIn();
-		$("#div2").fadeIn("slow");
-		$("#div3").fadeIn(3000); 
-		$(this).siblings(".menu-item h4, .menu-item a").css("color","blue"); 
-    }).mouseout(function(){
-    	$(this).siblings(".menu-item h4, .menu-item a").css("color","white");
-    }); */
-
-
-	$(".menu-item h4").mouseover(function(){
-		// $(this).parent().siblings().find("h4, a").css("color","blue");
-		$(this).parent().siblings().find("h4, a").css({
+	    
+    // Function to hide all menu items except the selected.
+	$(".navBtnHide li a").mouseover(function(){
+		$(this).parent().siblings().find("a").css({
 			color:"#111150"
 		});
     }).mouseout(function(){
-    	$(".menu-item h4, .menu-item a").css("color","white");
+    	$(".navBtnHide li a").css("color","white");
     }); 
-
 });
 

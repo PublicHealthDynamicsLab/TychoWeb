@@ -612,6 +612,71 @@ nav{
 	background-size:cover;		
 }
 
+.t-cell.userStats div{
+	border:none;
+	display:block;
+	width:100%;
+	font-style:italic;
+	text-align:center;
+}
+
+.t-table.mapContainer .stTb{
+	display:table;
+  	border-collapse:separate;
+	width:100%;
+	background-color:grey;
+}
+
+.t-table.mapContainer .stTb .stTbRow{
+	display:table-row;
+	width:100%;
+	padding-left:10px;
+}
+
+.t-table.mapContainer .stTb .stTbCol{
+	display:table-cell;
+	font-size:120%;
+	text-align:left;
+	border-bottom:2px solid grey;	
+}
+
+.dm{
+	margin-top:100px;
+}
+
+.dm .dmRow{
+	display:table-row;
+	width:100%;
+}
+
+.dm .dmRow .dmLeftHeading, .dm .dmRow .dmRightHeading{
+	display:table-cell;
+	text-align:center;
+	font-size:200%;
+	color:teal;
+}
+
+.dmLeftHeading{
+	width:30vw;
+	height:100%;
+}
+
+.dmRightHeading{
+	width:70vw;
+	height:100%;
+}
+
+.dataMapStats{
+	height:100%;
+	margin:0 auto;
+}
+
+.dataMapStats td{
+	padding:15px;
+	font-size:200%;
+}
+
+
 /* News block */
 .t-table.news{
 	border-collapse:collapse;
