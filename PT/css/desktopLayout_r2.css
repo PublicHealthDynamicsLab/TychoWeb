@@ -343,9 +343,11 @@ body{
 	width:50%;
 	margin:2% 0 0 10%;
 	text-align:left;
+	border-bottom:2px solid gainsboro;
+	border-collapse:collapse;	
 }
 
-table, th, td{
+th, td{
 	border-bottom:2px solid gainsboro;
 	border-collapse:collapse;
 }
@@ -663,7 +665,6 @@ th, td{
 
 /* Data map */
 .t-table.mapContainer{
-	border:2px solid red;
 	box-sizing:border-box;
 	border:none;
 	background-color:#f7f7f7;
@@ -685,7 +686,7 @@ th, td{
 	width:30vw;
 	height:25vw;
 	display:table-cell;
-	padding:0;	
+	padding:2%;	
 	vertical-align:middle;
 	background-color:transparent;
 }
@@ -702,6 +703,7 @@ th, td{
 	display:table;
   	border-collapse:separate;
 	width:100%;
+	background-color:grey;
 }
 
 .t-table.mapContainer .stTb .stTbRow{
@@ -741,12 +743,47 @@ th, td{
 	height:100%;
 }
 
+.dm{
+	margin-top:100px;
+}
+
+.dm .dmRow{
+	display:table-row;
+	width:100%;
+}
+
+.dm .dmRow .dmLeftHeading, .dm .dmRow .dmRightHeading{
+	display:table-cell;
+	text-align:center;
+	font-size:200%;
+	color:teal;
+}
+
+.dmLeftHeading{
+	width:30vw;
+	height:100%;
+}
+
+.dmRightHeading{
+	width:70vw;
+	height:100%;
+}
+
+.dataMapStats{
+	height:100%;
+	margin:0 auto;
+}
+
+.dataMapStats td{
+	padding:15px;
+	font-size:200%;
+}
+
 /* Choropleth map */
 .in1{
-	border:2px solid red;
 	width:100%;
 	height:100%;
-		border-radius: 25px;
+	border-radius: 25px;
 }
 
 /* Footer */

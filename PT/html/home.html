@@ -3,6 +3,8 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- JQuery and bootstrap libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,11 +12,13 @@
 		<script src="../libraries/jquery-3.2.0.js"></script>
 		<script src="../css/projectTycho_r2.js"></script>
 		
+		<!-- D3 library and links -->	
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 		<link href="../libraries/d3-geomap-1.0.2/css/d3.geomap.css" rel="stylesheet">
 		<script src="../libraries/d3-geomap-1.0.2/vendor/d3.geomap.dependencies.min.js"></script>
 		<script src="../libraries/d3-geomap-1.0.2/js/d3.geomap.min.js"></script>		
 		
+		<!-- CSS pages based on media queries -->
 		<link rel="stylesheet" media="(max-width: 680px)" href="../css/mobileLayout_r2.css"/>
 		<link rel="stylesheet" media="(min-width: 681px)" href="../css/desktopLayout_r2.css"/>		
 	</head>
@@ -126,36 +130,16 @@
 		</div>
 		
 		<!-- Data Map -->
-		<div class="block">
-			<div class="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					<span class="btnName">Data Map</span>	
-					<span class="glyphicon glyphicon-menu-down"></span>
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">ThisIsOne</a></li>
-					<li><a href="#">ThisIsTwo</a></li>
-					<li><a href="#">ThisIsThree</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">ThisIsOne</a></li>
-					<li><a href="#">ThisIsTwo</a></li>
-					<li><a href="#">ThisIsThree</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">ThisIsOne</a></li>
-					<li><a href="#">ThisIsTwo</a></li>
-					<li><a href="#">ThisIsThree</a></li>
-					<li><a href="#">ThisIsOne</a></li>
-					<li><a href="#">ThisIsTwo</a></li>
-					<li><a href="#">ThisIsThree</a></li>			  		
-					<li role="separator" class="divider"></li>
-					<li><a href="#">ThisIsFour</a></li>
-				</ul>
+		<div class="block dm">
+			<div class="dmRow">
+				<div class="dmLeftHeading">Project Tycho Statistics</div>
+				<div class="dmRightHeading">Countries included</div>
 			</div>
 		</div>
 		<div class="t-table mapContainer">
 			<div class="t-row">
 				<div class="t-cell userStats">
-					<div class="stTb">
+					<!-- <div class="stTb">
 						<div class="stTbRw">
 							<div class="stTbCol">Registered users</div>
 							<div class="stTbCol">3000</div>
@@ -184,7 +168,38 @@
 							<div class="stTbCol">Number of sources included</div>
 							<div class="stTbCol">21</div>
 						</div>
-					</div>
+					</div>		-->	
+					<table class="dataMapStats">
+						<!-- Rows for values -->
+						<tr>
+							<td>Registered users</td>
+							<td>3,000</td> 
+						</tr>
+						<tr>
+							<td>Number of user countries</td>
+							<td>93</td> 
+						</tr>
+						<tr>
+							<td>Datasets downloaded</td>
+							<td>5,000</td> 
+						</tr>
+						<tr>
+							<td>Conditions included</td>
+							<td>278</td> 
+						</tr>
+						<tr>
+							<td>Locations included</td>
+							<td>2,000</td> 
+						</tr>
+						<tr>
+							<td>Number of counts</td>
+							<td>15,001,023</td> 
+						</tr>	
+						<tr>
+							<td>Number of sources included</td>
+							<td>21</td> 
+						</tr>																
+					</table>
 					
 				</div>
 				<div class="t-cell dataMap">
