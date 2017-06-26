@@ -495,27 +495,35 @@ nav{
 }
 
 .t-table.footer .t-row{
-	display:table-row;
+	margin:0;
+	display:block;
 	width:100%;
 }
 
 .t-table.footer .t-row .t-cell{
-	display:table-row;
-	border:1px solid yellow;
+	border:none;
+	display:block;
 	width:100%;
-	height:50px;
+	height:auto;
 }
 
 .t-table.footer .t-row .t-cell .col_1{
-	border:2px solid red;
 	color:white;
 	text-align:center;
 	width:100%;
-	height:100%;
 }
 
 .t-table.footer .t-row .t-cell .col_2{
 	display:none;
+	width:100%;
+}
+
+.t-table.footer .t-row .t-cell .col_2 a{
+	border:none;
+}
+
+.colShow{
+	display:block;
 }
 
 /* Conditions */

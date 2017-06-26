@@ -3,50 +3,47 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- JQuery and bootstrap libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">				
 		<script src="../libraries/jquery-3.2.0.js"></script>
-		<script src="../css/projectTycho_r2.js"></script>
+		
+		<!-- CSS pages based on media queries -->
 		<link rel="stylesheet" media="(max-width: 680px)" href="../css/mobileLayout_r2.css"/>
-		<link rel="stylesheet" media="(min-width: 681px)" href="../css/desktopLayout_r2.css"/>
+		<link rel="stylesheet" media="(min-width: 681px)" href="../css/desktopLayout_r2.css"/>		
+		<script src="../css/projectTycho_r2.js"></script>
 	</head>
 
 	<body>
 		<!-- Navigation menu and university logo -->
-		<nav class="clickMenu">
-			<div class="mMenu">
-				<div class="menuButton">
-					<div></div>
-					<div></div>
-					<div></div>
+		<div class="navMenu">
+		    <nav class="navbar navbar-default">
+				<!-- Logo and toggle button -->
+				<div class="navbar-header">
+				    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				  		<span class="icon-bar"></span>
+				    </button>
+				    <a href="#" class="navbar-brand"><img src="../images/pitt-logo-bluebkg.gif" alt="University of Pittsburgh"></a>
 				</div>
-			</div>
-			
-			<div class="menu-item">
-	      		<h4 class="noSubMenu"><a href="home.html">HOME</a></h4>	      			
-	    	</div>
-		
-			<div class="menu-item">
-	      		<h4 class="noSubMenu"><a href="aboutPage.html">ABOUT</a></h4>	      			
-	    	</div>
-	      
-	    	<div class="menu-item">
-	    		<h4 class="noSubMenu"><a href="people.html">PEOPLE</a></h4>
-	    	</div>
-	      
-	    	<div class="menu-item">
-	    		<h4 class="subMenu">DATA</h4>
-	    	</div>
-	    			  
-	    	<div class="menu-item">
-	    		<h4 class="subMenu">USERS</h4>
-	    	</div>
-	    		
-	    	<div class="menu-item">
-	    		<h4 class="subMenu">NEWS</h4>
-	    	</div>    		    		
-		</nav>
+		        <!-- Navigation links for toggling -->
+		        <div id="navbarCollapse" class="collapse navbar-collapse">
+		            <ul class="nav navbar-nav navbar-right navBtnHide">
+		                <li><a href="#">HOME</a></li>
+		                <li><a href="#">ABOUT</a></li>
+		                <li><a href="#">PEOPLE</a></li>
+		                <li><a href="#">DATA</a></li>
+		                <li><a href="#">USERS</a></li>
+		                <li><a href="#">NEWS</a></li>		            
+		            </ul>
+		        </div>
+		    </nav>
+		</div>
 	
 		<!-- Banner -->
 		<div class="row banner dataBanner">

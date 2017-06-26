@@ -69,5 +69,12 @@
     }).mouseout(function(){
     	$(".navBtnHide li a").css("color","white");
     }); 
+    
+    //Function to display footer.
+    $(".t-table.footer .col_1 h4").click(function(){
+    	if($(".t-table.footer .t-row").css("display")=="block"){
+	    	$(this).parent().siblings(" .col_2").toggle().toggleClass('.colShow');
+    	}
+    });
 });
 
