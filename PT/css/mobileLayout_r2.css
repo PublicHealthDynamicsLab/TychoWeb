@@ -1087,6 +1087,43 @@ nav{
 	background-color:teal;
 }
 
+/* People grid - New */
+.pplGrid{
+	width:100%;
+	border:2px black;
+	margin-top:50px;
+}
+
+.row{
+	width:100%;
+	margin:0;
+}
+
+.col-md-4{
+	width:20%;
+	display:inline-block;
+	margin:0;
+	padding-left:0;
+	padding-right:0;	
+}
+
+.colWrapper{
+	width:100%;
+	padding-top:100%;
+	position:relative;
+}
+
+.colWrapper img{
+	content:"One";
+	border:1px solid white;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
 
 /* ----------------------------------------------------- COLLABORATOR AND FUNDERS LISTING PAGE-------------------------------------------------------*/
 /* Collaborators */

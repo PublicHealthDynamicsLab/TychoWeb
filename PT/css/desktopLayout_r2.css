@@ -80,6 +80,7 @@
 	text-align:center;
 	font-size:500%;
 }
+
 /* Contact us */
 .row.contactUs .c1 h4{
 	text-align:center;
@@ -974,6 +975,89 @@ th, td{
 #grid li:hover .bgColor{
 	opacity:1;
 	background-color:teal;
+}
+
+/* People grid - New */
+.pplGrid{
+	width:100%;
+	border:2px black;
+	margin-top:50px;
+}
+
+.row{
+	width:100%;
+	margin:0;
+}
+
+.col-md-4{
+	width:20%;
+	display:inline-block;
+	margin:0;
+	padding-left:0;
+	padding-right:0;	
+}
+
+.colWrapper{
+	width:100%;
+	padding-top:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+.colWrapper img{
+	border:1px solid white;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.colWrapper .perName{
+	position:absolute;
+	z-index:100;
+	top:0;
+	left:0;
+	width:0;
+	height:0;	
+	transition: width 1s, height 1s;
+	background-color:#111150;
+	overflow:hidden;
+}
+
+.colWrapper .perTitle{
+	position:absolute;
+	z-index:100;
+	bottom:0;
+	right:0;
+	width:0;
+	height:0;	
+	transition: width 1s, height 1s;
+	background-color:#111150;
+	overflow:hidden;
+}
+
+.colWrapper .perName h4{
+	position:absolute;
+	top:75%;
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:150%;
+}
+
+.colWrapper .perTitle h4{
+	position:absolute;
+	top:0;
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:150%;
+}
+
+.colWrapper:hover .perName, .colWrapper:hover .perTitle{
+	height:50%;
+	width:100%;
 }
 
 /* ----------------------------------------------------- DATA PORTAL PAGE-------------------------------------------------------*/
