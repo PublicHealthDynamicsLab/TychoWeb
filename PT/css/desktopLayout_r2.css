@@ -1027,48 +1027,26 @@ th, td{
 	z-index:100;
 	top:0;
 	left:0;
-	width:0;
-	height:0;	
-	transition:width 1s, height 1s, -webkit-transform 1s;;
+	width:100%;
+	height:100%;	
+	transition:all 0.5s;
 	background-color:#111150;
 	overflow:hidden;
-}
-
-.colWrapper .perTitle{
-	position:absolute;
-	z-index:100;
-	bottom:0;
-	right:0;
-	width:0;
-	height:0;	
-	transition:width 1s, height 1s, -webkit-transform 1s;;
-	background-color:#111150;
-	overflow:hidden;
+	opacity:0;
+	transition:0.5 ease;
 }
 
 .colWrapper .perName h4{
 	position:absolute;
-	top:75%;
+	top:50%;
 	width:100%;
 	text-align:center;
 	color:white;
 	font-size:150%;
 }
 
-.colWrapper .perTitle h4{
-	position:absolute;
-	top:0;
-	width:100%;
-	text-align:center;
-	color:white;
-	font-size:150%;
-}
-
-.colWrapper:hover .perName, .colWrapper:hover .perTitle{
-	height:50%;
-	width:100%;
-    -webkit-transform: rotate(180deg); /* Safari */
-    transform: rotate(360deg);
+.colWrapper:hover .perName{
+	opacity:1;
 }
 
 /* ----------------------------------------------------- PEOPLE INSTANCE PAGE-------------------------------------------------------*/
