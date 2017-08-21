@@ -65,7 +65,7 @@
 }
 
 .row.descBox .descText{
-	font-size:200%;
+	font-size:150%;
 	color:black;
 	text-align:center;
 	padding:5px;	
@@ -552,11 +552,6 @@ nav{
 }
 
 /* ----------------------------------------------------- HOME PAGE-------------------------------------------------------*/
-/* Banner and university logo */
-.banner{
-	display:none;
-}
-
 /* Featured work */
 .t-table.featuredWork{
 	border-collapse:collapse;
@@ -749,7 +744,7 @@ nav{
 .row.aboutBanner .c1{
 	width:100%;
 	height:30vh;
-	background-image:url('../images/AboutBanner.jpg');
+	background-image:url('../images/bannerAndSquare/aboutPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -781,7 +776,7 @@ nav{
 .row.methodActivities .c1{
 	width:100%;
 	height:30vh;
-	background-image:url('../images/About_MethodsActivities.jpg');
+	background-image:url('../images/bannerAndSquare/aboutPage_methodsAndActivities.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -798,6 +793,29 @@ nav{
 }
 
 /* ----------------------------------------------------- DATA PORTAL PAGE-------------------------------------------------------*/
+/* Banner and logo */
+.row.dataBanner .c1 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/bannerAndSquare/dataPage_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dataBanner .pitt_logo{
+	position:absolute;
+	top:2%;
+	left:1%;
+	height:13.4vw;
+	width:20vw;
+}
+
+.dataBanner .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
 /* Pre-assembled data sets */
 .t-table.preData{
 	margin-bottom:50px;
@@ -840,7 +858,7 @@ nav{
 .row.thinBanner#b1 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/DataPortal_AccessDataUsedInPublishedResearch.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_AccessDataUsedInPublishedResearch.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
@@ -849,7 +867,7 @@ nav{
 .row.thinBanner#b2 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/DataPortal_AccessToStandardizedData.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_accessToStandardizedData.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
@@ -858,14 +876,14 @@ nav{
 .row.thinBanner#b3 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/DataPortal_APIForStandardizedData.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_apiForStandardizedData.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
 }
 
 .row.descBox .c1 p, .row.descBox .c1 h4 {
-	font-size:200%;
+	font-size:150%;
 }
 
 /* Datasets by country or conditions */
@@ -879,6 +897,39 @@ nav{
 
 .t-table.counCond .t-row .t-cell.sq_even{
 	background-color:teal;
+}
+
+/* ----------------------------------------------------- DATASET TEMPLATE PAGE-------------------------------------------------------*/
+/* Banner and logo */
+.row.insPageDetails{
+	margin-top:0;
+	position:relative;
+	border:none;
+}
+
+.row.insPageDetails .c1{
+	position:relative;
+	background-color:#f7f7f7;
+	width:100%;
+	height:40vh;
+}
+
+.row.insPageDetails .pitt_logo{
+	display:none;
+}
+
+.row.insPageDetails .insInfo{
+	position:absolute;
+	top:25%;
+	right:15%;
+}
+
+.row.insPageDetails .insInfo h4{
+	margin-bottom:0;
+	margin-top:0;
+	color:black;
+	font-size:350%;
+	font-weight:normal;	
 }
 
 /* ----------------------------------------------------- NEWS PAGE-------------------------------------------------------*/
@@ -1128,7 +1179,7 @@ nav{
 /* ----------------------------------------------------- COLLABORATOR AND FUNDERS LISTING PAGE-------------------------------------------------------*/
 /* Collaborators */
 .block.funderCollab{
-	color:teal;
+	color:red;
 	font-size:150%;
 }
 

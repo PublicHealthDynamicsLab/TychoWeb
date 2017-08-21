@@ -29,7 +29,7 @@
 				        <span class="icon-bar"></span>
 				  		<span class="icon-bar"></span>
 				    </button>
-				    <a href="#" class="navbar-brand"><img src="../images/pitt-logo-bluebkg.gif" alt="University of Pittsburgh"></a>
+				    <a href="#" class="navbar-brand"><img src="../images/logo/blueBkg.gif" alt="University of Pittsburgh"></a>
 				</div>
 		        <!-- Navigation links for toggling -->
 		        <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -49,7 +49,7 @@
 		<div class="row insPageDetails">
 			<div class="c1">
 				<div class="pitt_logo">
-					<img src="../images/logo_tychoVector.png">
+					<img src="../images/logo/tychoLogo_vector.png">
 				</div>
 				<div class="insInfo">
 					<h4>Country Name</h4>
@@ -58,158 +58,106 @@
 		</div>
 			
 		<!-- Definitions -->
-		<table class="insTab">
+		<table class="insTab" itemscope itemtype="http://health-lifesci.schema.org/MedicalCondition">
 			<caption>Location information</caption>
-			<!-- Row for column headings -->
-			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
-			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
+				<td>Country name as in ISO 3166</td>
 				<td>Brazil</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Country ISO 3166-2 code</td>
+				<td><a href="https://www.cia.gov/library/publications/the-world-factbook/geos/br.html">BR</a></td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>First administrative subdivisions included</td>
+				<td><A, B, C> {URL to each location geonames info page}</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Second administrative subdivisions included</td>
+				<td><A, B, C>  {URL to each location geonames info page}</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Cities and populated places included</td>
+				<td><A, B, C>  {URL to each location geonames info page}</td> 
 			</tr>			
 		</table>
 		
 		<!-- Conditions and pathogen information -->	
-		<table class="insTab">
+		<table class="insTab" itemprop="cause" itemscope itemtype="http://health-lifesci.schema.org/MedicalCause">
 			<caption>Condition and pathogen information</caption>
 			<!-- Row for column headings -->
 			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
+				<th>Attribute</th>
+				<th>Value</th> 
 			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Conditions included</td>
+				<td>(Condition A, Condition B, ..){URL’s to: http://www.snomedbrowser.com/Codes/Details/192644005}</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>			
+				<td>Pathogens included</td>
+				<td>(Neisseria meningitidis, ..){URL’s to Taxonomy}</td> 
+			</tr>		
 		</table>
 
 		<!-- Time information -->	
 		<table class="insTab">
 			<caption>Time information</caption>
-			<!-- Row for column headings -->
-			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
-			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
+				<td>Earliest Year</td>
+				<td></td> 
+			</tr>
+			<tr>
+				<td>Latest Year</td>
 				<td>Brazil</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Type of count series included</td>
+				<td>Cumulative count series, Fixed interval count series</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Size of time intervals (days)</td>
+				<td>7, 14, 21, 365, </td> 
 			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>			
 		</table>
 		
 		<!-- Count attribute information -->	
 		<table class="insTab">
 			<caption>Count attribute information</caption>
-			<!-- Row for column headings -->
-			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
-			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Age range </td>
+				<td>0-4.99, 0-130</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Subpopulation</td>
+				<td>Civilian, Military</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Place of acquisition</td>
+				<td>Domestic, Abroad</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Diagnostic certainty</td>
+				<td>Definite, Equivocal, Possible diagnosis, Probable diagnosis</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Fatalities included</td>
+				<td>1,0</td> 
 			</tr>			
 		</table>
 
 		<!-- Source information -->	
 		<table class="insTab">
 			<caption>Source information</caption>
-			<!-- Row for column headings -->
-			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
-			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>			
+				<td>Names of sources included</td>
+				<td>World Health Organization DengueNet Database, Morbidity and Mortality Weekly Report</td> 
+			</tr>	
 		</table>
 
 		<!-- License -->	

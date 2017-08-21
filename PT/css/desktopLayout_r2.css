@@ -6,11 +6,6 @@
 }
 
 /* 1. Defining rows, columns and tables and other definitions to be re-used throughout the site. */
-/* 
-1.1 Basic row - column definition 
-- Margin left and right to override bootstrap settings.
-*/
-
 .row{
 	width:100%;
 	margin-top:100px;
@@ -544,7 +539,7 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/HomePage_banner.jpg');
+	background-image:url('../images/bannerAndSquare/homePage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -639,7 +634,7 @@ th, td{
 	position:relative;
 	width:100%;
 	height:500px;
-	background-image:url('../images/HomePage_AccessData.jpg');
+	background-image:url('../images/bannerAndSquare/homePage_accessData.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
@@ -796,7 +791,7 @@ th, td{
 .row.aboutBanner .c1{
 	width:100%;
 	height:600px;
-	background-image:url('../images/AboutBanner.jpg');
+	background-image:url('../images/bannerAndSquare/aboutPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -824,7 +819,7 @@ th, td{
 .row.methodActivities .c1{
 	width:100%;
 	height:600px;
-	background-image:url('../images/About_MethodsActivities.jpg');
+	background-image:url('../images/bannerAndSquare/aboutPage_methodsAndActivities.jpg');
 	background-repeat:no-repeat;
 	background-position:15% 15%;
 	background-size:cover;
@@ -845,8 +840,8 @@ th, td{
 
 .row.peoplePage .c1{
 	width:100%;
-	height:70vh;
-	background-image:url('../images/People_Banner.jpg');
+	height:600px;
+	background-image:url('../images/bannerAndSquare/peoplePage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:top left;
 	background-size:cover;
@@ -856,7 +851,7 @@ th, td{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:15vw;
+	height:13.4vw;
 	width:20vw;
 }
 
@@ -1124,7 +1119,7 @@ th, td{
 .row.dataBanner .c1{
 	width:100%;
 	height:600px;
-	background-image:url('../images/DataBanner.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1168,7 +1163,7 @@ th, td{
 .row.thinBanner#b1 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/DataPortal_AccessDataUsedInPublishedResearch.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_AccessDataUsedInPublishedResearch.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
@@ -1177,7 +1172,7 @@ th, td{
 .row.thinBanner#b2 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/DataPortal_AccessToStandardizedData.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_accessToStandardizedData.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
@@ -1186,7 +1181,7 @@ th, td{
 .row.thinBanner#b3 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/DataPortal_APIForStandardizedData.jpg');
+	background-image:url('../images/bannerAndSquare/dataPage_apiForStandardizedData.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
@@ -1217,6 +1212,9 @@ th, td{
 	background-color:#111150;
 }
 
+/* ----------------------------------------------------- DATASET TEMPLATE PAGE-------------------------------------------------------*/
+
+
 /* ----------------------------------------------------- FEATUREDWORK - JOURNALIST PAGE -------------------------------------------------------*/
 /* Banner and university logo */
 .row.banner.journalist{
@@ -1228,7 +1226,7 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/Users_Media3.jpg');
+	background-image:url('../images/bannerAndSquare/featuredWorkJournalistPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1288,7 +1286,7 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/Users_Research.jpg');
+	background-image:url('../images/bannerAndSquare/researchPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1316,9 +1314,9 @@ th, td{
 
 .row.banner.student .c1{
 	width:100%;
-	height:80vh;
+	height:600px;
 	position:relative;
-	background-image:url('../images/Users_Students.jpg');
+	background-image:url('../images/bannerAndSquare/studentPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:bottom right;
 	background-size:cover;
@@ -1326,9 +1324,9 @@ th, td{
 
 .student .pitt_logo{
 	position:absolute;
-	top:2%;
-	left:1%;
-	height:20vw;
+	top:0;
+	left:0;
+	height:13.4vw;
 	width:20vw;
 }
 
@@ -1367,6 +1365,24 @@ th, td{
 	height:100%;
 }
 
+/* ----------------------------------------------------- FEATUREDWORK INSTANCE PAGE -------------------------------------------------------*/
+/* Image in news container */
+.newsContainer.featuredWorkInstance .newsImage{
+	background-image:url('../images/bannerAndSquare/dengue.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+/* ----------------------------------------------------- NEWS INSTANCE PAGE -------------------------------------------------------*/
+/* Image in news container */
+.newsContainer.newsInstance .newsImage{
+	background-image:url('../images/bannerAndSquare/hands.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
 /* ----------------------------------------------------- FEATUREDWORK - LISTING PAGE -------------------------------------------------------*/
 /* Banner and university logo */
 .row.banner.listing{
@@ -1378,7 +1394,7 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/FeaturedWork_Banner.jpg');
+	background-image:url('../images/bannerAndSquare/featuredWorkListingPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1494,17 +1510,17 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/Users_Media2.jpg');
+	background-image:url('../images/bannerAndSquare/newsPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
 }
 
-.newsPage.pitt_logo{
+.newsPage .pitt_logo{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:15vw;
+	height:13.4vw;
 	width:20vw;
 }
 
@@ -1523,12 +1539,11 @@ th, td{
 .row.thinBanner#n1 .c1{
 	width:100%;
 	height:300px;
-	background-image:url('../images/NewsArchive.jpg');
+	background-image:url('../images/bannerAndSquare/newsPage_archive.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
 }
-
 
 /* ----------------------------------------------------- NEWS INSTANCE PAGE-------------------------------------------------------*/
 /* Logo and news article title */
@@ -1609,6 +1624,36 @@ th, td{
 	left:0;
 }
 
+/* ----------------------------------------------------- NEWS ARCHIVE PAGE-------------------------------------------------------*/
+/* Banner and university logo */
+.row.banner.newsArchive{
+	margin-top:0;
+	position:relative;
+}
+
+.row.banner.newsArchive .c1{
+	width:100%;
+	height:600px;
+	background-image:url('../images/bannerAndSquare/newsArchivePage_banner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.newsArchive .pitt_logo{
+	position:absolute;
+	top:2%;
+	left:1%;
+	height:13.4vw;
+	width:20vw;
+}
+
+.newsArchive .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+
 /* ----------------------------------------------------- COLLABORATORS AND FUNDERS LISTING PAGE-------------------------------------------------------*/
 /* Banner and university logo */
 .row.banner.collabFunder{
@@ -1619,7 +1664,7 @@ th, td{
 .row.banner.collabFunder .c1{
 	width:100%;
 	height:600px;
-	background-image:url('../images/CollaboratorsFundersLising.jpg');
+	background-image:url('../images/bannerAndSquare/CollaboratorsFundersLisingPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1679,7 +1724,7 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/CountriesConditions_Banner.jpg');
+	background-image:url('../images/bannerAndSquare/countriesConditionsPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1812,7 +1857,7 @@ th, td{
 	width:100%;
 	height:600px;
 	position:relative;
-	background-image:url('../images/669-redone.jpg');
+	background-image:url('../images/bannerAndSquare/researchEnvironmentPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
@@ -1841,10 +1886,11 @@ th, td{
 	width:100%;
 	height:60vh;
 	position:relative;
-	background-image:url('../images/ResearchEnvironment_Pitt.jpg');
+	background-image:url('../images/bannerAndSquare/researchEnvironmentPage_uPitt.jpg');
 	background-repeat:no-repeat;
 	background-position:75%;
 	background-size:cover;	
+	border:1px solid #111150;
 }
 
 .uPitt .bannerName_up{
@@ -1871,10 +1917,11 @@ th, td{
 .row.phdl .c1{
 	width:100%;
 	height:500px;
-	background-image:url('../images/EnvironmentPHDL.jpg');
+	background-image:url('../images/bannerAndSquare/researchEnvironmentPage_PHDL.jpg');
 	background-repeat:no-repeat;
 	background-position:10% 10%;
 	background-size:cover;	
+	border:1px solid #111150;
 }
 
 .bannerName_ph{
@@ -1901,10 +1948,11 @@ th, td{
 .row.vmi .c1{
 	width:100%;
 	height:500px;
-	background-image:url('../images/ResearchEnvironmentVaccineModeling.jpg');
+	background-image:url('../images/bannerAndSquare/researchEnvironmentPage_VMI.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;	
+	border:1px solid #111150;
 }
 
 .bannerName_vm{
@@ -1964,7 +2012,7 @@ th, td{
 	width:100%;
 	height:70vh;
 	position:relative;
-	background-image:url('../images/Users_Banner.jpg');
+	background-image:url('../images/bannerAndSquare/usersPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:top left;
 	background-size:cover;
@@ -1974,8 +2022,8 @@ th, td{
 	position:absolute;
 	top:2%;
 	left:1%;
-	height:10vw;
-	width:10vw;
+	height:13.4vw;
+	width:20vw;
 }
 
 .usersPage .pitt_logo img{

@@ -3,6 +3,7 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta "description" content="Meningococcal meningitis (disorder), SNOMED-CT code-192644005, Authors-Wilbert van Panhuis">
 		
 		<!-- JQuery and bootstrap libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,7 +30,7 @@
 				        <span class="icon-bar"></span>
 				  		<span class="icon-bar"></span>
 				    </button>
-				    <a href="#" class="navbar-brand"><img src="../images/pitt-logo-bluebkg.gif" alt="University of Pittsburgh"></a>
+				    <a href="#" class="navbar-brand"><img src="../images/logo/blueBkg.gif" alt="University of Pittsburgh"></a>
 				</div>
 		        <!-- Navigation links for toggling -->
 		        <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -49,7 +50,7 @@
 		<div class="row insPageDetails">
 			<div class="c1">
 				<div class="pitt_logo">
-					<img src="../images/logo_tychoVector.png">
+					<img src="../images/logo/tychoLogo_vector.png">
 				</div>
 				<div class="insInfo">
 					<h4>Condition Name</h4>
@@ -58,10 +59,10 @@
 		</div>
 		
 		<!-- Citation -->	
-		<div class="detailsContainer">
+		<div class="detailsContainer" itemscope itemtype="http://schema.org/Dataset">
 			<div class="detailHeading"><p>Citation(see data use license)</p></div>
 			<div class="details">
-				<p class="detLeft">Van Panhuis, W.G., Cross A., Anantaraju, S.V.T., Burke, D.S., Case counts of meningococcal meningitis in the United States for 
+				<p class="detLeft"  itemprop="citation">Van Panhuis, W.G., Cross A., Anantaraju, S.V.T., Burke, D.S., Case counts of meningococcal meningitis in the United States for 
 					1924-2002 (version 2.0, July 31, 2017): Project Tycho data release, DOI: 019.29438.PROJECTTYCHO.V2
 				</p> 
 				<p class="detRight"></p>
@@ -86,34 +87,54 @@
 		</div>	
 
 		<!-- Condition and pathogen information -->
-		<table class="insTab">
+		<table class="insTab" itemscope itemtype="https://health-lifesci.schema.org/InfectiousDisease">
 			<caption>Condition and pathogen information</caption>
 			<!-- Row for column headings -->
 			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
+				<th>Attribute</th>
+				<th>Value</th> 
 			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>SNOMED-CT name</td>
+				<td>Meningococcal meningitis (disorder)</td> 
+			</tr>
+			<tr itemprop="code" itemscope itemtype="https://health-lifesci.schema.org/MedicalCode">
+				<td itemprop="codingSystem">SNOMED-CT code</td>
+				<td itemprop="codeValue"><a href="http://www.snomedbrowser.com/Codes/Details/192644005">192644005</a></td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>SNOMED-CT parents</td>
+				<td>Parents</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>SNOMED-CT children</td>
+				<td>Children</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Condition name as used by source files</td>
+				<td itemprop="name">Meningococcal meningitis</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>			
+				<td>Related condition(s) ICD-10 names and codes</td>
+				<td>Meningococcal meningitis (A39.0)</td> 
+			</tr>
+			<tr itemscope itemtype="https://health-lifesci.schema.org/InfectiousDisease">
+				<td itemprop="infectiousAgent">Causing pathogen name as in NCBI Taxonomy</td>
+				<td>Neisseria meningitidis</td> 
+			</tr>
+			<tr>
+				<td>Causing pathogen NCBI Taxonomy ID number</td>
+				<td><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=487">487</a></td> 
+			</tr>
+			<tr>
+				<td>Host species name as in NCBI Taxonomy</td>
+				<td>Homo sapiens</td> 
+			</tr>
+			<tr>
+				<td>Host NCBI Taxonomy ID number</td>
+				<td><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9609">9609</a></td> 
+			</tr>																		
 		</table>
 
 		<!-- Space and time information -->	
@@ -121,60 +142,51 @@
 			<caption>Space and Time information</caption>
 			<!-- Row for column headings -->
 			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
+				<td>Locations included</td>
+				<td>List of locations</td> 
 			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Earliest year</td>
+				<td>1924</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Latest year</td>
+				<td>2002</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Type of count series included</td>
+				<td>Cumulative count series, Fixed interval count series</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>			
+				<td>Size of time intervals (days)</td>
+				<td>7, 14, 21, 365, ..</td> 
+			</tr>		
 		</table>
 		
 		<!-- Count attribute information -->	
-		<table class="insTab">
+		<table class="insTab" itemscope itemtype="https://health-lifesci.schema.org/MedicalStudy">
 			<caption>Count attribute information</caption>
-			<!-- Row for column headings -->
-			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
-			</tr>
 			<!-- Rows for values -->
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Age Range</td>
+				<td>0-4.99, 0-130</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Subpopulation</td>
+				<td itemprop="population">Civilian, Military</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Place of acquisition</td>
+				<td>Domestic, Abroad</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Diagnostic certainty</td>
+				<td>Definite, Equivocal, Possible diagnosis, Probable diagnosis</td> 
 			</tr>
 			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
+				<td>Fatalities included</td>
+				<td>1,0</td> 
 			</tr>			
 		</table>
 
@@ -183,30 +195,9 @@
 			<caption>Source information</caption>
 			<!-- Row for column headings -->
 			<tr>
-				<th>Col1_Heading</th>
-				<th>Col2_Heading</th> 
-			</tr>
-			<!-- Rows for values -->
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>Brazil</td> 
-			</tr>			
+				<td>Names of sources included</td>
+				<td>World Health Organization DengueNet Database, Morbidity and Mortality Weekly Report</td> 
+			</tr>		
 		</table>
 		
 		<!-- Footer -->
