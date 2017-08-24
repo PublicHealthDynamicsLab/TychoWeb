@@ -551,6 +551,26 @@ nav{
 	font-size:120%;
 }
 
+/* Instance page - Banner and logo */
+.instContainer{
+	margin-top:10px;
+	margin-bottom:50px;
+	color:teal;
+	font-style:italic;
+	font-weight:normal;
+
+}
+
+.instContainer .col-lg-4 img{
+	height:13.4vw;
+	width:20vw;
+}
+
+.instContainer .col-lg-8{
+	text-align:right;
+	padding-right:50px;
+}
+
 /* ----------------------------------------------------- HOME PAGE-------------------------------------------------------*/
 /* Featured work */
 .t-table.featuredWork{
@@ -753,6 +773,12 @@ nav{
 	padding-left:5%;
 	padding-right:5%;
 }
+
+.instContainer .col-lg-4 img{
+	height:13.4vw;
+	width:20vw;
+}
+
 
 
 /* ----------------------------------------------------- ABOUT PAGE-------------------------------------------------------*/

@@ -526,6 +526,25 @@ th, td{
 	display:none;
 }
 
+/* Instance page - Banner and logo */
+.instContainer{
+	margin-top:10px;
+	margin-bottom:50px;
+	color:teal;
+	font-style:italic;
+	font-weight:normal;
+
+}
+
+.instContainer .col-lg-4 img{
+	height:13.4vw;
+	width:20vw;
+}
+
+.instContainer .col-lg-8{
+	text-align:right;
+	padding-right:50px;
+}
 
 /* ----------------------------------------------------- HOME PAGE-------------------------------------------------------*/
 /* Banner and university logo */
@@ -1593,7 +1612,6 @@ th, td{
 	position:absolute;
 	top:25%;
 	right:15%;
-	border:2px solid red;
 	width:80vw;
 }
 
