@@ -734,6 +734,27 @@ nav{
 	height:100%;
 }
 
+/* ----------------------------------------------------- FEATUREDWORK INSTANCE PAGE-------------------------------------------------------*/
+/* Featured work container */
+.newsContainer.featuredWorkInstance .newsImage{
+	background-image:url('../images/bannerAndSquare/dengue.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.newsContainer.featuredWorkInstance .colLeft .newsText{
+	padding-left:5%;
+	padding-right:5%;
+	text-align:justify;
+}
+
+.newsContainer.featuredWorkInstance .colRight{
+	padding-left:5%;
+	padding-right:5%;
+}
+
+
 /* ----------------------------------------------------- ABOUT PAGE-------------------------------------------------------*/
 /* Banner and logo */
 .row.aboutBanner{
@@ -1172,6 +1193,128 @@ nav{
 	left:0;
 	width:100%;
 	height:100%;
+}
+
+/* ----------------------------------------------------- PEOPLE INSTANCE PAGE-------------------------------------------------------*/
+/* Logo and news article title */
+.row.newsInstance{
+	margin-top:0;
+	position:relative;
+}
+
+.row.newsInstance .c1{
+	position:relative;
+	background-color:#f7f7f7;
+	width:100%;
+	height:200px;
+}
+
+.row.newsInstance .pitt_logo{
+	display:none;
+}
+
+.row.newsInstance .pitt_logo img{
+	width:100%;
+	height:100%;
+}
+
+.row.newsInstance .conditionInfo{
+	position:absolute;
+	top:25%;
+	padding-left:30px;
+	width:80vw;
+}
+
+.conditionInfo h3, .conditionInfo h4{
+	margin-bottom:0;
+	margin-top:0;
+	text-align:justify;
+	color:teal;
+	font-style:italic;
+	font-weight:normal;	
+}
+
+/* Bio of person */
+.container{
+	width:100%;
+}
+
+.bioContainer{
+	width:100%;
+}
+
+.bioContainer .col-lg-8 div{
+	margin-bottom:20px;
+}
+
+.bioContainer .col-lg-8 p{
+	font-size:100%;
+}
+
+.bioContainer .col-lg-4 p{
+	font-size:100%;
+}
+
+.bioContainer.row .col-lg-12 p{
+	padding-top:30px;
+	font-size:100%;
+	text-align:justify;
+}
+
+.bioContainer .bcImage{
+	width:300px;
+	height:300px;
+	float:left;	
+}
+
+.bioContainer .bcImage img{
+	width:100%;
+	height:100%;
+}
+
+.bioPerson{
+	display:none;
+}
+
+.bioPerson p{
+	padding:0;
+	margin:0;
+}
+
+.bioPerson p:first-child{
+	color:teal;
+	font-size:200%;
+	font-weight:normal;
+}
+
+.bioPerson p:nth-child(2){
+	font-style:italic;
+	font-size:150%;
+}
+
+.bioContainer h4{
+	font-size:200%;
+	color:teal;
+}
+
+/* ----------------------------------------------------- NEWS INSTANCE PAGE-------------------------------------------------------*/
+/* News container */
+.newsContainer.newsInstance .newsImage{
+	background-image:url('../images/bannerAndSquare/dengue.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.newsContainer.newsInstance .colLeft .newsText{
+	padding-left:5%;
+	padding-right:5%;
+	text-align:justify;
+}
+
+.newsContainer.newsInstance .colRight{
+	padding-left:5%;
+	padding-right:5%;
 }
 
 

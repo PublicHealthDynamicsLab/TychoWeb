@@ -1059,11 +1059,7 @@ th, td{
 	margin-bottom:50px;
 }
 
-.bioContainer .col-lg-8 p{
-	font-size:150%;
-}
-
-.bioContainer .col-lg-4 p{
+.bioContainer .col-lg-8 p, .bioContainer .col-lg-4 p{
 	font-size:150%;
 }
 
@@ -1107,7 +1103,6 @@ th, td{
 	font-size:150%;
 	text-align:justify;
 }
-
 
 /* ----------------------------------------------------- DATA PORTAL PAGE-------------------------------------------------------*/
 /* Data portal page banner and logo */
@@ -1366,12 +1361,22 @@ th, td{
 }
 
 /* ----------------------------------------------------- FEATUREDWORK INSTANCE PAGE -------------------------------------------------------*/
-/* Image in news container */
+/* Featured work container */
 .newsContainer.featuredWorkInstance .newsImage{
 	background-image:url('../images/bannerAndSquare/dengue.png');
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:cover;
+}
+
+.newsContainer.featuredWorkInstance .colLeft .newsText{
+	padding-left:5%;
+	text-align:justify;
+}
+
+.newsContainer.featuredWorkInstance .colRight{
+	padding-left:5%;
+	padding-right:5%;
 }
 
 /* ----------------------------------------------------- NEWS INSTANCE PAGE -------------------------------------------------------*/
@@ -1382,6 +1387,17 @@ th, td{
 	background-position:center center;
 	background-size:cover;
 }
+
+.newsContainer.newsInstance .colLeft .newsText{
+	padding-left:5%;
+	text-align:justify;
+}
+
+.newsContainer.newsInstance .colRight{
+	padding-left:5%;
+	padding-right:5%;
+}
+
 
 /* ----------------------------------------------------- FEATUREDWORK - LISTING PAGE -------------------------------------------------------*/
 /* Banner and university logo */
@@ -1577,24 +1593,37 @@ th, td{
 	position:absolute;
 	top:25%;
 	right:15%;
+	border:2px solid red;
+	width:80vw;
 }
 
-.row.newsInstance .conditionInfo h4{
+.conditionInfo h3, .conditionInfo h4{
 	margin-bottom:0;
 	margin-top:0;
 	color:teal;
-	font-size:350%;
 	font-style:italic;
 	font-weight:normal;	
 }
 
+/* News container */
 .newsContainer{
 	width:100%;
 	display:table;
 }
 
 .newsContainer .newsRow{
+	position:relative;
+}
+
+.newsContainer .newsRow .colLeft .newsText{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.newsContainer .newsRow{
 	display:table-row;
+	position:relative;
 }
 
 .newsContainer .newsRow .colLeft, .newsContainer .newsRow .colRight{
@@ -1616,12 +1645,15 @@ th, td{
 	text-align:center;
 	margin:25px 0;
 }
+
+.newsContainer .newsRow .colLeft{
+	height:100%;
+}
+
 .newsContainer .newsRow .colLeft p{
-	margin-left:25px;
+	margin-left:5%;
 	font-size:150%;
-	position:absolute;
-	top:0;
-	left:0;
+	margin-top:0;
 }
 
 /* ----------------------------------------------------- NEWS ARCHIVE PAGE-------------------------------------------------------*/
