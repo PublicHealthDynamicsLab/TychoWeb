@@ -543,7 +543,16 @@ th, td{
 
 .instContainer .col-lg-8{
 	text-align:right;
-	padding-right:50px;
+	padding-right:60px;
+}
+
+/* Instance tables */
+.tableLeftCol{
+	width:40vw;
+}
+
+.tableRightCol{
+	width:60vw;
 }
 
 /* ----------------------------------------------------- HOME PAGE-------------------------------------------------------*/
@@ -810,6 +819,7 @@ th, td{
 .row.aboutBanner .c1{
 	width:100%;
 	height:600px;
+	position:relative;
 	background-image:url('../images/bannerAndSquare/aboutPage_banner.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -1072,6 +1082,8 @@ th, td{
 
 .bioContainer{
 	width:100%;
+	padding-left:50px;
+	padding-right:50px;
 }
 
 .bioContainer .col-lg-8 div{
@@ -1079,7 +1091,7 @@ th, td{
 }
 
 .bioContainer .col-lg-8 p, .bioContainer .col-lg-4 p{
-	font-size:150%;
+	font-size:100%;
 }
 
 .bioContainer .bcImage{
@@ -1093,8 +1105,9 @@ th, td{
 	height:100%;
 }
 
-.bioPerson{
-	font-size:150%;
+.bioContainer h4{
+	font-size:200%;
+	color:teal;
 }
 
 .bioPerson p{
@@ -1104,18 +1117,13 @@ th, td{
 
 .bioPerson p:first-child{
 	color:teal;
-	font-size:200%;
+	font-size:150%;
 	font-weight:normal;
 }
 
 .bioPerson p:nth-child(2){
 	font-style:italic;
 	font-size:150%;
-}
-
-.bioContainer h4{
-	font-size:200%;
-	color:teal;
 }
 
 .bioContainer.row .col-lg-12 p{
