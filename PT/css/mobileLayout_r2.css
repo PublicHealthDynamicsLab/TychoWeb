@@ -1343,17 +1343,14 @@ nav{
 
 .bioPerson p:first-child{
 	color:teal;
-	font-size:200%;
 	font-weight:normal;
 }
 
 .bioPerson p:nth-child(2){
 	font-style:italic;
-	font-size:150%;
 }
 
 .bioContainer h4{
-	font-size:200%;
 	color:teal;
 }
 

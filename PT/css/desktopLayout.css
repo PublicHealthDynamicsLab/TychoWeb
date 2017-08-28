@@ -1,0 +1,260 @@
+﻿/*------------------------------ Body ---------------------------------*/
+body{
+	background-color:#f7f7f7;
+}
+
+/* Container */
+.container{
+	padding:0;
+	margin:0;
+	width:100%;
+}
+
+.row{
+	margin:0;
+	margin-bottom:100px;
+}
+
+.bsBanner{
+	height:600px;
+	width:100%;
+	background-image:url('../images/bannerAndSquare/aboutPage_banner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	position:relative;
+}
+
+.row .bannerText{
+	position: absolute;
+	top:75%;
+	left:10%;
+	color:white;
+}
+
+.row .bannerLogo{
+	position:absolute;
+	top:0;
+	left:0;
+	height:13.4vw;
+	width:20vw;
+}
+
+/* Fonts and text */
+p{
+	text-align:justify;
+}
+
+/* Footer */
+.row.footer{
+	background-color:navy;
+}
+
+.row.footer p, .row.footer a{
+	text-align:center;
+	display:block;
+	color:white;
+	text-decoration:none;
+}
+
+/* Bootstrap - Navigation menu */
+.navbar{
+	margin:0;
+}
+
+.navbar-brand{
+	padding:0 0;
+}
+
+.navbar-brand>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav.navbar.navbar-default{
+	border:0px;
+}
+
+.navbar-right{
+	margin-right:30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size:18px;
+    font-weight:normal;
+    transition:2s;
+}
+
+.navbar-default{
+	border-color:#111150;
+}
+
+.navbar-collapse{
+	background-color:#111150;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+/* Blocks */
+.row.bsBlock{
+	margin:0 0 100px 0;
+}
+
+.row.bsBlock div{
+	display:inline-block;
+	float:left;
+}
+
+.row.bsBlock .col-lg-2{
+	position:relative;
+	width:20%;
+	padding-bottom:20%;
+	border:1px solid white;
+}
+
+.row.bsBlock .col-lg-2 div{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.row.bsBlock img{
+	width:100%;
+	height:100%;
+}
+
+/* Block level dropdown menu */
+.dropdown{
+	display:inline-block;
+}
+
+.row.dpDwn{
+	margin:0;
+	text-align:center;
+}
+
+.dropdown-menu{
+	margin:auto;
+}
+
+.btn{
+	background-color:#f7f7f7;
+}
+
+.btn:hover{
+	color:white;
+	background-color:teal;
+}
+
+/* Block banners */
+.row.blkBanner{
+	height:300px;
+	border:2px solid red;
+}
+
+.row.blkBanner .col-lg-12{
+	position:relative;
+}
+
+.row.blkBanner .col-lg-12 .blkBannerText{
+	position:absolute;
+	top:50%;
+	width:100%;
+	height:100%;
+	text-align:center;
+	color:white;
+}
+
+/* Featured work pages */
+.row.ftWorkPap table{
+	width:100%;
+	border-collapse:separate;
+	border-spacing:0 20px;
+}
+
+.row.ftWorkPap table tr{
+
+
+}
+
+.row.ftWorkPap .tdLeft{
+	width:25%;
+	border-right:2px solid grey;
+	text-align: right;
+	padding-right:10px;
+}
+
+.row.ftWorkPap .tdRight{
+	width:75%;
+	text-align:left;
+	padding-left:10px;
+}
+
+/* Background images for banners and blocks */
+#MandA{
+	width:100%;
+	height:100%;
+	background-image:url('../images/bannerAndSquare/aboutPage_methodsAndActivities.JPG');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.row.midas .midasImg img{
+	width:15vw;
+	height:15vw;
+	float:left;
+	margin-right:20px;
+}
+
+/*------------------------------ Media queries ---------------------------------*/
+
+@media screen and (max-width:1200px){
+	/* Block squares */
+	.row.bsBlock .col-lg-2{
+		position:relative;
+		width:25%;
+		padding-bottom:25%;
+		border:2px solid red;
+		background-color:yellow;
+	}
+
+	.row.bsBlock .col-lg-2 div{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background-color:yellow;		
+	}
+	
+	.row.bsBlock #col5{
+		display:none;
+	}
+}
+
+@media screen and (max-width:768px){
+	/* Navigation menu */
+	.navbar-header{		
+		background-color:#111150;		
+	}		
+	.navbar-default .navbar-toggle .icon-bar{		
+		background-color:white;		
+	}		
+	.navbar-default .navbar-toggle{		
+		border:white;		
+	}		
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{		
+		background-color:transparent;		
+	}		
+	.navbar{		
+		border:none;		
+	}
+}

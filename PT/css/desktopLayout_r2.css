@@ -1091,7 +1091,7 @@ th, td{
 }
 
 .bioContainer .col-lg-8 p, .bioContainer .col-lg-4 p{
-	font-size:100%;
+
 }
 
 .bioContainer .bcImage{
@@ -1105,11 +1105,6 @@ th, td{
 	height:100%;
 }
 
-.bioContainer h4{
-	font-size:200%;
-	color:teal;
-}
-
 .bioPerson p{
 	padding:0;
 	margin:0;
@@ -1117,17 +1112,14 @@ th, td{
 
 .bioPerson p:first-child{
 	color:teal;
-	font-size:150%;
 	font-weight:normal;
 }
 
 .bioPerson p:nth-child(2){
 	font-style:italic;
-	font-size:150%;
 }
 
 .bioContainer.row .col-lg-12 p{
-	font-size:150%;
 	text-align:justify;
 }
 

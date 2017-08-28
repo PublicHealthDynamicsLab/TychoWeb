@@ -1,0 +1,121 @@
+﻿/*------------------------------ Body ---------------------------------*/
+
+/* Container */
+.container{
+	padding:0;
+	margin:0;
+	width:100%;
+}
+
+.row{
+	margin:0;
+	margin-bottom:100px;
+}
+
+.bsBanner{
+	height:600px;
+	width:100%;
+	background-image:url('../images/bannerAndSquare/aboutPage_banner.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+/* Fonts and text */
+p{
+	text-align:justify;
+}
+
+/* Bootstrap - Navigation menu */
+.navbar{
+	margin:0;
+}
+
+.navbar-brand{
+	padding:0 0;
+}
+
+.navbar-brand>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav.navbar.navbar-default{
+	border:0px;
+}
+
+.navbar-right{
+	margin-right:30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size:18px;
+    font-weight:normal;
+    transition:2s;
+}
+
+.navbar-default{
+	border-color:#111150;
+}
+
+.navbar-collapse{
+	background-color:#111150;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+/* Block */
+.row.bsBlock div{
+	display:inline-block;
+	float:left;
+}
+
+/* .row.bsBlock .col-sm-4{
+	position:relative;
+	width:25%;
+	padding-bottom:25%;
+	border:2px solid red;		
+}
+
+.row.bsBlock .col-sm-4 div{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.row.bsBlock .col-md-3{
+	position:relative;
+	width:25%;
+	padding-bottom:25%;
+	border:2px solid red;		
+}
+
+.row.bsBlock .col-md-3 div{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+} */
+
+.row.bsBlock .col-lg-2{
+	position:relative;
+	width:33.33%;
+	padding-bottom:33.33%;
+	border:2px solid red;
+}
+
+.row.bsBlock .col-lg-2 div{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}

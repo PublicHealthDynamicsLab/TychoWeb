@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- JQuery and bootstrap libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">				
+		<script src="../libraries/jquery-3.2.0.js"></script>
+		
+		<!-- CSS pages based on media queries -->
+		<!-- <link rel="stylesheet" media="(max-width: 680px)" href="../css/mobileLayout_r2.css"/>
+		<link rel="stylesheet" media="(min-width: 681px)" href="../css/desktopLayout_r2.css"/>	-->	
+		
+		<!-- <link rel="stylesheet" media="(max-width: 768px)" href="../css/mobileLayout.css"/> -->
+		<!-- <link rel="stylesheet" media="(min-width: 769px)" href="../css/desktopLayout.css"/> -->		
+		<link rel="stylesheet" href="../css/desktopLayout.css"/>
+		<script src="../css/projectTycho_r2.js"></script>
+	</head>
+
+	<body>
+		<!-- Navigation menu and university logo -->
+		<div class="navMenu">
+		    <nav class="navbar navbar-default">
+				<!-- Logo and toggle button -->
+				<div class="navbar-header">
+				    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				  		<span class="icon-bar"></span>
+				    </button>
+				    <a href="#" class="navbar-brand"><img src="../images/logo/blueBkg.gif" alt="University of Pittsburgh"></a>
+				</div>
+		        <!-- Navigation links for toggling -->
+		        <div id="navbarCollapse" class="collapse navbar-collapse">
+		            <ul class="nav navbar-nav navbar-right navBtnHide">
+		                <li><a href="#">HOME</a></li>
+		                <li><a href="#">ABOUT</a></li>
+		                <li><a href="#">PEOPLE</a></li>
+		                <li><a href="#">DATA</a></li>
+		                <li><a href="#">USERS</a></li>
+		                <li><a href="#">NEWS</a></li>		            
+		            </ul>
+		        </div>
+		    </nav>
+		</div>
+		
+		<!-- Main container -->
+		<div class="container">
+			<!-- Banner - BS -->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12 bsBanner">
+					<div class="bannerLogo">
+						<img src="../images/logo/tychoLogo_white.png" alt="Project Tycho logo">
+					</div>
+					<div class="bannerText">
+						This is the text
+					</div>
+				</div>
+			</div>
+			
+			<!-- Description -->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<p>
+						Project Tycho aims to advance scientific discovery and innovation by providing open access to infectious disease data from countries around the world at a high spatial-temporal
+						resolution. Project Tycho re-represents existing data from (inter)national health agencies and research studies into a user-friendly format that can be accessed manually or 
+					 	programmatically.					
+					</p>
+				</div>
+			</div>
+			
+			<!-- Featured work by researchers -->
+			<div class="row dpDwn">
+				<div class="col-lg-12">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="btnName">Featured Work - Researchers</span>	
+							<span class="glyphicon glyphicon-menu-down"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>			  		
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsFour</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="row bsBlock">
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2" id="col5"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+			</div>
+						
+			<!-- Featured work by students -->
+			<div class="row dpDwn">
+				<div class="col-lg-12">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="btnName">Featured Work - Students</span>	
+							<span class="glyphicon glyphicon-menu-down"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>			  		
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsFour</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="row bsBlock">
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2" id="col5"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+			</div>
+			
+			<!-- Featured work by journalists -->
+			<div class="row dpDwn">
+				<div class="col-lg-12">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="btnName">Featured Work - Journalists</span>	
+							<span class="glyphicon glyphicon-menu-down"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>			  		
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsFour</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="row bsBlock">
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2" id="col5"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+			</div>
+
+			<!-- Featured work by policy makers -->
+			<div class="row dpDwn">
+				<div class="col-lg-12">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="btnName">Featured Work - Policy Makers</span>	
+							<span class="glyphicon glyphicon-menu-down"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>
+							<li><a href="#">ThisIsOne</a></li>
+							<li><a href="#">ThisIsTwo</a></li>
+							<li><a href="#">ThisIsThree</a></li>			  		
+							<li role="separator" class="divider"></li>
+							<li><a href="#">ThisIsFour</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="row bsBlock">
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+				<div class="col-md-4 col-lg-2" id="col5"><div><img src="../images/team/wilbertVanPanhuis.jpg" alt="Wilbert"></div></div>
+			</div>
+			
+			<!-- Footer -->
+			<div class="row footer">
+				<div class="col-lg-3">
+					<p>Follow Us</p>
+				</div>
+				<div class="col-lg-3">
+					<p>Contact Us</p>
+					<a href="#">Add info</a>
+					<a href="#">More info</a>
+					<a href="#">More info</a>
+					<a href="#">More info</a>					
+				</div>
+				<div class="col-lg-3">
+					<p>Resources</p>
+					<a href="#">Add info</a>
+					<a href="#">More info</a>
+					<a href="#">More info</a>
+					<a href="#">More info</a>					
+				</div>
+				<div class="col-lg-3">
+					<p>Privacy</p>
+					<a href="#">Add info</a>
+					<a href="#">More info</a>
+					<a href="#">More info</a>
+					<a href="#">More info</a>					
+				</div>
+			</div>
+			
+		</div>			
+	</body>
+</html>
